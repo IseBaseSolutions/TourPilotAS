@@ -1,10 +1,6 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto" >
     <item
-        android:id="@+id/action_clear_database"
-        android:title="@string/menu_clear_darabase"
-        app:showAsAction="never"/>
-    <item
         android:id="@+id/action_show_program_info"
         android:title="@string/menu_program_info"
         app:showAsAction="never"/>
@@ -15,6 +11,10 @@
     <item
         android:id="@+id/action_db_restore"
         android:title="@string/menu_db_restore"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_clear_database"
+        android:title="@string/menu_clear_darabase"
         app:showAsAction="never"/>
     <item
         android:id="@+id/action_close_program"
