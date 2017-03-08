@@ -1,0 +1,40 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/action_add_additional_work"
+        android:title="@string/menu_add_additional_work"/>
+	<item
+		android:id="@+id/action_illness_tours"
+		android:title="@string/menu_illness_tours">
+		<menu>
+			<item android:id="@+id/action_add_patient_to_illness"
+				android:title="@string/menu_add_patient" />
+			<item android:id="@+id/action_remove_patient_from_illness"
+				android:title="@string/menu_remove_patient" />
+		</menu>
+	</item>
+	<item
+		android:id="@+id/action_common_tours"
+		android:title="@string/menu_common_tours">
+		<menu>
+			<item android:id="@+id/action_add_patient_to_common"
+				android:title="@string/menu_add_patient" />
+			<item android:id="@+id/action_remove_patient_from_common"
+				android:title="@string/menu_remove_patient" />
+		</menu>
+	</item>
+	<item
+		android:id="@+id/action_show_all_patients"
+		android:title="@string/menu_all_patients"/>  
+    <item
+        android:id="@+id/tour_info"
+        android:title="@string/menu_info" />
+    <item
+        android:id="@+id/workers_info"
+        android:title="@string/menu_workers_tour_info" />    
+    <item
+        android:id="@+id/cars_info"
+        android:title="@string/menu_cars_info" />        
+    <item
+        android:id="@+id/action_actual_workers"
+        android:title="@string/menu_actual_workers" />
+</menu>

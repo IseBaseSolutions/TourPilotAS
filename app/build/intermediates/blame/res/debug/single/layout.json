@@ -1,0 +1,422 @@
+[
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_worker_option.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\layout\\activity_worker_option.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\3683e0aac7aa938c40592aab043ac8281ac1bac8\\output\\res\\layout\\notification_template_part_time.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_close_item_material.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\3683e0aac7aa938c40592aab043ac8281ac1bac8\\output\\res\\layout\\abc_action_mode_close_item_material.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\row_braden_question_template.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\layout\\row_braden_question_template.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\row_single_additional_employment_emplate.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\layout\\row_single_additional_employment_emplate.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\row_employment_category_template.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\layout\\row_employment_category_template.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_material.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\3683e0aac7aa938c40592aab043ac8281ac1bac8\\output\\res\\layout\\abc_alert_dialog_material.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_assessments.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\layout\\activity_assessments.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_layout.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\3683e0aac7aa938c40592aab043ac8281ac1bac8\\output\\res\\layout\\abc_list_menu_item_layout.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\row_address_template.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\layout\\row_address_template.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_braden.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\layout\\dialog_braden.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\3683e0aac7aa938c40592aab043ac8281ac1bac8\\output\\res\\layout\\abc_search_view.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_questions.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\layout\\activity_questions.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_custom_big.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\72a8d83bd6fcfdf7acbb841ddfa99e889e327534\\output\\res\\layout\\notification_template_custom_big.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\row_multi_additional_employment_template.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\layout\\row_multi_additional_employment_template.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_gps.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\layout\\activity_gps.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_action.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\72a8d83bd6fcfdf7acbb841ddfa99e889e327534\\output\\res\\layout\\notification_action.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_expanded_menu_layout.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\3683e0aac7aa938c40592aab043ac8281ac1bac8\\output\\res\\layout\\abc_expanded_menu_layout.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_additional_works.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\layout\\activity_additional_works.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\3683e0aac7aa938c40592aab043ac8281ac1bac8\\output\\res\\layout\\abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_item_material.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\3683e0aac7aa938c40592aab043ac8281ac1bac8\\output\\res\\layout\\select_dialog_item_material.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_manual_input.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\layout\\activity_manual_input.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_main_dummy.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\layout\\fragment_main_dummy.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_chronometer.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\3683e0aac7aa938c40592aab043ac8281ac1bac8\\output\\res\\layout\\notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_radio.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\3683e0aac7aa938c40592aab043ac8281ac1bac8\\output\\res\\layout\\abc_list_menu_item_radio.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\row_additional_task_template.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\layout\\row_additional_task_template.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_base.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\layout\\activity_base.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_verification.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\layout\\activity_verification.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_doctors.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\layout\\activity_doctors.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_item_layout.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\3683e0aac7aa938c40592aab043ac8281ac1bac8\\output\\res\\layout\\abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media_custom.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\72a8d83bd6fcfdf7acbb841ddfa99e889e327534\\output\\res\\layout\\notification_template_media_custom.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_braden_skala_picture_info.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\layout\\activity_braden_skala_picture_info.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_braden_skala.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\layout\\activity_braden_skala.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\72a8d83bd6fcfdf7acbb841ddfa99e889e327534\\output\\res\\layout\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_list_item.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\3683e0aac7aa938c40592aab043ac8281ac1bac8\\output\\res\\layout\\abc_activity_chooser_view_list_item.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\row_task_template.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\layout\\row_task_template.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_kontraktur_picture_info.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\layout\\activity_kontraktur_picture_info.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\row_worker_template.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\layout\\row_worker_template.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_patients.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\layout\\activity_patients.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_fallen_factor.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\layout\\activity_fallen_factor.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_view_list_nav_layout.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\3683e0aac7aa938c40592aab043ac8281ac1bac8\\output\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_singlechoice_material.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\3683e0aac7aa938c40592aab043ac8281ac1bac8\\output\\res\\layout\\select_dialog_singlechoice_material.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\3683e0aac7aa938c40592aab043ac8281ac1bac8\\output\\res\\layout\\abc_activity_chooser_view.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_norton.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\layout\\activity_norton.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_media_action.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\3683e0aac7aa938c40592aab043ac8281ac1bac8\\output\\res\\layout\\notification_media_action.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\3683e0aac7aa938c40592aab043ac8281ac1bac8\\output\\res\\layout\\support_simple_spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_pain_analyse.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\layout\\activity_pain_analyse.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_add_tasks.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\layout\\activity_add_tasks.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\3683e0aac7aa938c40592aab043ac8281ac1bac8\\output\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_item_layout.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\3683e0aac7aa938c40592aab043ac8281ac1bac8\\output\\res\\layout\\abc_popup_menu_item_layout.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_address.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\layout\\activity_address.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_comments.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\layout\\activity_comments.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_notes.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\layout\\activity_notes.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media_narrow.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\3683e0aac7aa938c40592aab043ac8281ac1bac8\\output\\res\\layout\\notification_template_big_media_narrow.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_pin.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\layout\\dialog_pin.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines_media.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\72a8d83bd6fcfdf7acbb841ddfa99e889e327534\\output\\res\\layout\\notification_template_lines_media.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_title_material.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\72a8d83bd6fcfdf7acbb841ddfa99e889e327534\\output\\res\\layout\\abc_alert_dialog_title_material.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_user_remarks.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\layout\\activity_user_remarks.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_tasks_assessements.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\layout\\activity_tasks_assessements.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_additional_employments.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\layout\\activity_additional_employments.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_tasks.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\layout\\activity_tasks.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_synchronization.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\layout\\activity_synchronization.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\row_braden_sub_answer_template.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\layout\\row_braden_sub_answer_template.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\row_job_template.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\layout\\row_job_template.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\3683e0aac7aa938c40592aab043ac8281ac1bac8\\output\\res\\layout\\notification_template_big_media.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\3683e0aac7aa938c40592aab043ac8281ac1bac8\\output\\res\\layout\\notification_template_lines.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_media_cancel_action.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\3683e0aac7aa938c40592aab043ac8281ac1bac8\\output\\res\\layout\\notification_media_cancel_action.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_up_container.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\3683e0aac7aa938c40592aab043ac8281ac1bac8\\output\\res\\layout\\abc_action_bar_up_container.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple_overlay_action_mode.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\3683e0aac7aa938c40592aab043ac8281ac1bac8\\output\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_toolbar.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\3683e0aac7aa938c40592aab043ac8281ac1bac8\\output\\res\\layout\\abc_screen_toolbar.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_multichoice_material.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\3683e0aac7aa938c40592aab043ac8281ac1bac8\\output\\res\\layout\\select_dialog_multichoice_material.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\row_tour_template.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\layout\\row_tour_template.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_new_user_remarks.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\layout\\activity_new_user_remarks.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_content_include.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\3683e0aac7aa938c40592aab043ac8281ac1bac8\\output\\res\\layout\\abc_screen_content_include.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_button_bar_material.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\3683e0aac7aa938c40592aab043ac8281ac1bac8\\output\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_tour_oncoming_info.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\layout\\activity_tour_oncoming_info.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_add_tasks_category.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\layout\\activity_add_tasks_category.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_send_log.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\layout\\activity_send_log.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_select_dialog_material.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\3683e0aac7aa938c40592aab043ac8281ac1bac8\\output\\res\\layout\\abc_select_dialog_material.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_info.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\layout\\activity_info.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\row_work_employment_template.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\layout\\row_work_employment_template.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_header_item_layout.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\72a8d83bd6fcfdf7acbb841ddfa99e889e327534\\output\\res\\layout\\abc_popup_menu_header_item_layout.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_icon_group.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\72a8d83bd6fcfdf7acbb841ddfa99e889e327534\\output\\res\\layout\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_checkbox.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\3683e0aac7aa938c40592aab043ac8281ac1bac8\\output\\res\\layout\\abc_list_menu_item_checkbox.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_workers.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\layout\\activity_workers.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_tours.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\layout\\activity_tours.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\new_activity_options.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\layout\\new_activity_options.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\3683e0aac7aa938c40592aab043ac8281ac1bac8\\output\\res\\layout\\notification_template_media.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_base_time_sync.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\layout\\activity_base_time_sync.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_bar.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\3683e0aac7aa938c40592aab043ac8281ac1bac8\\output\\res\\layout\\abc_action_mode_bar.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_actual_workers.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\layout\\activity_actual_workers.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_icon.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\3683e0aac7aa938c40592aab043ac8281ac1bac8\\output\\res\\layout\\abc_list_menu_item_icon.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\row_braden_answer_template.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\layout\\row_braden_answer_template.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\row_question.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\layout\\row_question.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\custom_time_picker.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\layout\\custom_time_picker.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\row_employment_template.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\layout\\row_employment_template.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_relatives.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\layout\\activity_relatives.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\3683e0aac7aa938c40592aab043ac8281ac1bac8\\output\\res\\layout\\abc_screen_simple.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_related_questions.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\layout\\activity_related_questions.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_verification_new.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\layout\\activity_verification_new.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\row_tour_oncoming_info_temlate.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\layout\\row_tour_oncoming_info_temlate.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\new_activity_workers.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\layout\\new_activity_workers.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_options.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\layout\\activity_options.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_layout.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\3683e0aac7aa938c40592aab043ac8281ac1bac8\\output\\res\\layout\\abc_action_menu_layout.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_dialog_title_material.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\3683e0aac7aa938c40592aab043ac8281ac1bac8\\output\\res\\layout\\abc_dialog_title_material.xml"
+    }
+]

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView 
+        android:id="@+id/tvQuestion"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:text="questionText"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+    
+	<RadioGroup android:id="@+id/rg_1"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical">  
+	    
+	    <RadioButton android:id="@+id/rbYes"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/yes"
+	        android:layout_weight="1"
+	        android:onClick="onRadioButtonClicked"/>
+	    <RadioButton android:id="@+id/rbNo"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/no"
+	        android:layout_weight="1"
+	        android:onClick="onRadioButtonClicked"/>
+   	    <RadioButton android:id="@+id/rbDontKnow"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/dont_know"
+	        android:layout_weight="1"
+	        android:onClick="onRadioButtonClicked"/>   	    
+
+	</RadioGroup>
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KontrakturPictureInfoActivity">
+    
+	<ScrollView
+	    android:id="@+id/scroll_view"
+	    android:scrollbars="none"
+	    android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+		
+		<HorizontalScrollView android:id="@+id/horizontal_scroll_view" 
+		    android:scrollbars="none"
+        	android:layout_width="wrap_content" 
+            android:layout_height="wrap_content">
+            
+			<!-- <LinearLayout
+			    android:id="@+id/linear_layout"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"> -->
+				
+		        	<isebase.cognito.tourpilot.Views.KontrakturView 
+					    android:id="@+id/kontraktur_view"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"/>	  
+						  
+			<!-- </LinearLayout> -->
+			
+	    </HorizontalScrollView>
+	    
+	</ScrollView>
+
+
+</RelativeLayout>

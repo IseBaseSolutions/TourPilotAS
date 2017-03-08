@@ -1,0 +1,138 @@
+[
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\menu\\tour_info.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\menu\\tour_info.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\menu\\main.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\menu\\main.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\menu\\simple_questions.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\menu\\simple_questions.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\menu\\related_questions.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\menu\\related_questions.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\menu\\notes.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\menu\\notes.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\menu\\options_menu.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\menu\\options_menu.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\menu\\braden_skala_picture_info.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\menu\\braden_skala_picture_info.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\menu\\doctors.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\menu\\doctors.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\menu\\fallen_factor.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\menu\\fallen_factor.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\menu\\address.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\menu\\address.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\menu\\patients_menu.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\menu\\patients_menu.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\menu\\base_time_sync.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\menu\\base_time_sync.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\menu\\manual_input.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\menu\\manual_input.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\menu\\worker_additional_info.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\menu\\worker_additional_info.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\menu\\info.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\menu\\info.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\menu\\braden_skala.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\menu\\braden_skala.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\menu\\test.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\menu\\test.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\menu\\relatives.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\menu\\relatives.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\menu\\tasks.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\menu\\tasks.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\menu\\send_log.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\menu\\send_log.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\menu\\verification.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\menu\\verification.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\menu\\add_tasks.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\menu\\add_tasks.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\menu\\base_menu.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\menu\\base_menu.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\menu\\actual_workers_menu.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\menu\\actual_workers_menu.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\menu\\pain_analyse.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\menu\\pain_analyse.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\menu\\norton.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\menu\\norton.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\menu\\base.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\menu\\base.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\menu\\kontraktur_picture_info.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\menu\\kontraktur_picture_info.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\menu\\version_menu.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\menu\\version_menu.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\menu\\add_tasks_category.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\menu\\add_tasks_category.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\menu\\gps.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\menu\\gps.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\menu\\tasks_assessements.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\menu\\tasks_assessements.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\menu\\new_user_remarks.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\menu\\new_user_remarks.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\menu\\comments.xml",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\menu\\comments.xml"
+    }
+]

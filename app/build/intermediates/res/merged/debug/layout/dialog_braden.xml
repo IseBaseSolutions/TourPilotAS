@@ -1,0 +1,36 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+	<RelativeLayout
+	    xmlns:tools="http://schemas.android.com/tools"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:paddingBottom="@dimen/activity_vertical_margin"
+	    android:paddingLeft="@dimen/activity_horizontal_margin"
+	    android:paddingRight="@dimen/activity_horizontal_margin"
+	    android:paddingTop="@dimen/activity_vertical_margin"    
+	    tools:context=".WorkersActivity" >
+	
+	    <LinearLayout android:id="@+id/linear_layout_able_give_data"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" 
+	        android:orientation="vertical">
+	   	</LinearLayout>
+	   	
+	    <LinearLayout android:id="@+id/linear_layout_has_any_pain"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" 
+	        android:layout_below="@+id/linear_layout_able_give_data"
+	        android:orientation="vertical">		
+		</LinearLayout>
+		
+	    <LinearLayout android:id="@+id/linear_layout_test_1"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" 
+	        android:layout_below="@+id/linear_layout_has_any_pain"
+	        android:orientation="vertical">
+		</LinearLayout>
+	
+	</RelativeLayout>
+</ScrollView>

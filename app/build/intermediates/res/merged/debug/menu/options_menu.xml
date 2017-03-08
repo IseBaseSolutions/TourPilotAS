@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sabd="http://schemas.android.com/apk/res-auto" >
+    <item
+        android:id="@+id/action_clear_database"
+        android:title="@string/menu_clear_darabase"
+        android:showAsAction="never"/>    	
+    <item
+        android:id="@+id/action_show_program_info"
+        android:title="@string/menu_program_info" 
+        android:showAsAction="always"/>
+    <item
+        android:id="@+id/action_db_backup"
+        android:title="@string/menu_db_backup"
+        android:showAsAction="never"/>
+    <item
+        android:id="@+id/action_db_restore"
+        android:title="@string/menu_db_restore"
+        android:showAsAction="never"/>
+    <item
+        android:id="@+id/action_close_program"
+        android:title="@string/menu_close_program"
+        android:showAsAction="always"/>
+    
+</menu>

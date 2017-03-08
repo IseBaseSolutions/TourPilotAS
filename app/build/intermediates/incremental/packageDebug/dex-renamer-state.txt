@@ -1,0 +1,7 @@
+#Wed Mar 08 00:56:31 EET 2017
+base.0=D\:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_40973924b1906d81a304623844378cd6513dd082
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=D\:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_a026ad95b1f8cc632ca6610f7cc05dae8762b3bc\\classes.dex
+base.1=D\:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_a026ad95b1f8cc632ca6610f7cc05dae8762b3bc
+file.0=D\:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_40973924b1906d81a304623844378cd6513dd082\\classes.dex

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\Admin\.android\build-cache\48ae21644025e09f92a24b1f04bbd5c216234923\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="292a9fa091757208efa65e77eef63088247e51f3">
+        <dex dex="D:\ANDROID\AndroidStudioProjects\TourPilot\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_1d5033b492d6fc21e99add70c2bc8062a0b97a45\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Admin\.android\build-cache\3683e0aac7aa938c40592aab043ac8281ac1bac8\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6e3578f92f7462d1a935a1d36173e3bdd1234976">
+        <dex dex="D:\ANDROID\AndroidStudioProjects\TourPilot\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_48364936389f24dfb5edfb8e06281d05d1f914c4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Admin\.android\build-cache\fb1b34c48222b7aac8ead0d812c153ad9b095851\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8c108c22c99e794eff255bb34d2a461200c4cbb0">
+        <dex dex="D:\ANDROID\AndroidStudioProjects\TourPilot\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_6d4a50304e912c7d6f8614450da1b6ef8bb15ced\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\ANDROID\AndroidStudioProjects\TourPilot\app\libs\ormlite-android-4.48.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="afa06f539a4026c10b247386312aa67404b80a16">
+        <dex dex="D:\ANDROID\AndroidStudioProjects\TourPilot\app\build\intermediates\transforms\dex\debug\folders\1000\2\ormlite-android-4.48_bf4dee229d7305afe015335110e32da6357675f6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Admin\.android\build-cache\677fe37f193750e0065252edcda7a3a3facd9680\output\jars\libs\internal_impl-23.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6e239441500605809818997dd63b62a947195f8c">
+        <dex dex="D:\ANDROID\AndroidStudioProjects\TourPilot\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.2.0_c393c0c0140beaff801d5dca9fac9ba26857b556\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\ANDROID\AndroidStudioProjects\TourPilot\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7d71572fb527ec885656b88bf7dd670ffa176993">
+        <dex dex="D:\ANDROID\AndroidStudioProjects\TourPilot\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_40973924b1906d81a304623844378cd6513dd082\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Admin\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\23.2.0\support-annotations-23.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c5bf571bb10462bd90e5419ade67793f71acbc87">
+        <dex dex="D:\ANDROID\AndroidStudioProjects\TourPilot\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.2.0_3acd3a2139df5097deec83d12c89b23d26f7536a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Admin\.android\build-cache\677fe37f193750e0065252edcda7a3a3facd9680\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e5f32fa48a3eb2de0c987025c11b6e3864b634d9">
+        <dex dex="D:\ANDROID\AndroidStudioProjects\TourPilot\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_4fe379f21c419fcd823a3f2d7bbcf09c0287b82b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\ANDROID\AndroidStudioProjects\TourPilot\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
+        <dex dex="D:\ANDROID\AndroidStudioProjects\TourPilot\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_a026ad95b1f8cc632ca6610f7cc05dae8762b3bc\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\ANDROID\AndroidStudioProjects\TourPilot\app\libs\ormlite-core-4.48.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e579bd2905d0399af5029aaaf9817d5fa0ca88a5">
+        <dex dex="D:\ANDROID\AndroidStudioProjects\TourPilot\app\build\intermediates\transforms\dex\debug\folders\1000\2\ormlite-core-4.48_3a18883404f3e4278e46d7df6fc57d7fd75c1d14\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\ANDROID\AndroidStudioProjects\TourPilot\app\libs\com.google.guava_1.6.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="92ae3566438bd0095feca55bf4a914d8cb162855">
+        <dex dex="D:\ANDROID\AndroidStudioProjects\TourPilot\app\build\intermediates\transforms\dex\debug\folders\1000\2\com.google.guava_1.6.0_2ef2cb2495ab29a2234580aa1b63792c3fb06477\classes.dex" />
+    </item>
+
+</items>

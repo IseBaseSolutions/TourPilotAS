@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_action_screen_locked_to_landscape.png",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\drawable-xxhdpi\\ic_action_screen_locked_to_landscape.png"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_launcher.png",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\drawable-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_medic.png",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\drawable-xxhdpi\\ic_medic.png"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_action_cancel.png",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\drawable-xxhdpi\\ic_action_cancel.png"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_action_accept.png",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\drawable-xxhdpi\\ic_action_accept.png"
+    },
+    {
+        "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_action_empty.png",
+        "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\drawable-xxhdpi\\ic_action_empty.png"
+    }
+]
