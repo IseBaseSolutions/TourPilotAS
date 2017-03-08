@@ -18,11 +18,12 @@ import isebase.cognito.tourpilot.Dialogs.BaseDialog;
 import isebase.cognito.tourpilot.StaticResources.StaticResources;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
+import android.support.v7.app.AppCompatActivity;
+import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class BaseActivity extends FragmentActivity {
+public class BaseActivity extends AppCompatActivity {
 
 	protected BaseDialog closeDialog;
 
@@ -63,6 +64,15 @@ public class BaseActivity extends FragmentActivity {
 		Option.Instance().save();
 		Intent intent = new Intent(getApplicationContext(), ToursActivity.class);
 		startActivity(intent);
+	}
+
+	public boolean dispatchKeyEvent(KeyEvent event) {
+		final int keycode = event.getKeyCode();
+		final int action = event.getAction();
+		if (keycode == KeyEvent.KEYCODE_MENU && action == KeyEvent.ACTION_UP) {
+			return true; // consume the key press
+		}
+		return super.dispatchKeyEvent(event);
 	}
 
 	@Override

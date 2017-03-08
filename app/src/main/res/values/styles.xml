@@ -1,5 +1,6 @@
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <style name="MyAppTheme" parent="android:Theme.Light"/> 
+    <!--style name="MyAppTheme" parent="android:Theme.Light"/-->
+    <style name="MyAppTheme" parent="Theme.AppCompat.Light.DarkActionBar"/>
 
 </resources>

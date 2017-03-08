@@ -59,7 +59,7 @@ public class BradenSkalaActivity extends BaseActivity implements BaseDialogListe
         fillUpList();
     }
     
-    @Override
+/*    @Override
     public boolean onMenuItemSelected(int featureId, MenuItem item) {
     	switch (item.getItemId()) {
 		case R.id.action_set_braden:
@@ -69,7 +69,7 @@ public class BradenSkalaActivity extends BaseActivity implements BaseDialogListe
 		default:
 			return super.onOptionsItemSelected(item);
 		}
-    }
+    }*/
     
     
     private void setTitle() {

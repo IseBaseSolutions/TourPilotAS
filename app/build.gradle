@@ -6,8 +6,8 @@ android {
 
     defaultConfig {
         applicationId "isebase.cognito.tourpilot"
-        minSdkVersion 3
-        targetSdkVersion 13
+        minSdkVersion 7
+        targetSdkVersion 17
     }
 
     buildTypes {

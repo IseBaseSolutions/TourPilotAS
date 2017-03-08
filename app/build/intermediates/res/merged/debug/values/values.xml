@@ -1588,7 +1588,7 @@
         <item name="android:minWidth">56dp</item>
         <item name="android:scaleType">center</item>
     </style>
-    <style name="MyAppTheme" parent="android:Theme.Light"/>
+    <style name="MyAppTheme" parent="Theme.AppCompat.Light.DarkActionBar"/>
     <style name="Platform.AppCompat" parent="android:Theme">
         <item name="android:windowNoTitle">true</item>
 
