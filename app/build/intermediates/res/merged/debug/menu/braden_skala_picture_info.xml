@@ -1,10 +1,14 @@
-<menu xmlns:android="http://schemas.android.com/apk/res/android" >
-
-    <!-- <item
-        android:id="@+id/action_zoom"
-        android:title="@string/menu_zoom"/> -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
     <item
-        android:id="@+id/action_undo"
-        android:title="@string/menu_undo"/>
-
+        android:id="@+id/empty"
+        android:icon="@drawable/ic_dots_vertical"
+        android:orderInCategory="101"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/action_undo"
+                android:title="@string/menu_undo"/>
+        </menu>
+    </item>
 </menu>

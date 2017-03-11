@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android" >
-    <item
-        android:id="@+id/action_db_backup"
-        android:title="@string/menu_db_backup"/>
-    <item
-        android:id="@+id/action_clear_darabase"
-        android:title="@string/menu_clear_darabase"/>
-    <item
-        android:id="@+id/action_close_program"
-        android:title="@string/menu_close_program"/>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/empty"
+        android:icon="@drawable/ic_dots_vertical"
+        android:orderInCategory="101"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/action_db_backup"
+                android:title="@string/menu_db_backup"/>
+            <item
+                android:id="@+id/action_clear_darabase"
+                android:title="@string/menu_clear_darabase"/>
+            <item
+                android:id="@+id/action_close_program"
+                android:title="@string/menu_close_program"/>
+        </menu>
+    </item>
 </menu>

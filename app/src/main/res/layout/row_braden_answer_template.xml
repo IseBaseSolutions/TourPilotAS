@@ -11,7 +11,8 @@
         android:layout_alignParentLeft="true"
         android:layout_centerVertical="true"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:paddingLeft="25dp" />
+        android:paddingLeft="25dp"
+        android:textColor="@color/black"/>
  
     <!-- <ImageView
         android:id="@+id/delete"

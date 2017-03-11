@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="isebase.cognito.tourpilot.test">
 
-    <uses-sdk android:minSdkVersion="3" android:targetSdkVersion="13" />
+    <uses-sdk android:minSdkVersion="7" android:targetSdkVersion="17" />
 
     <application>
         <uses-library android:name="android.test.runner" />

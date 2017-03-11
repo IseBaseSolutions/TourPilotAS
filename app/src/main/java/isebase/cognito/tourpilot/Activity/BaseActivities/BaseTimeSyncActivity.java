@@ -19,11 +19,12 @@ import isebase.cognito.tourpilot.EventHandle.SynchronizationHandler;
 import isebase.cognito.tourpilot.StaticResources.StaticResources;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
+import android.support.v7.app.AppCompatActivity;
+import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class BaseTimeSyncActivity extends FragmentActivity {
+public class BaseTimeSyncActivity extends AppCompatActivity {
 
 	private ConnectionStatus connectionStatus;
 	private ConnectionAsyncTask connectionTask;
@@ -53,6 +54,15 @@ public class BaseTimeSyncActivity extends FragmentActivity {
 
 	protected boolean isMainActivity() {
 		return false;
+	}
+
+	public boolean dispatchKeyEvent(KeyEvent event) {
+		final int keycode = event.getKeyCode();
+		final int action = event.getAction();
+		if (keycode == KeyEvent.KEYCODE_MENU && action == KeyEvent.ACTION_UP) {
+			return true; // consume the key press
+		}
+		return super.dispatchKeyEvent(event);
 	}
 
 	protected void criticalClose() {

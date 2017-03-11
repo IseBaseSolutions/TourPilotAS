@@ -24,12 +24,12 @@
         "source": "D:\\Programming\\Android\\Solutions\\TourPilotAS\\app\\src\\main\\res\\drawable-hdpi\\ic_medic.png"
     },
     {
-        "merged": "D:\\Programming\\Android\\Solutions\\TourPilotAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\gr.png",
-        "source": "D:\\Programming\\Android\\Solutions\\TourPilotAS\\app\\src\\main\\res\\drawable-hdpi\\gr.png"
-    },
-    {
         "merged": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_medic.png",
         "source": "D:\\ANDROID\\AndroidStudioProjects\\TourPilot\\app\\src\\main\\res\\drawable-hdpi\\ic_medic.png"
+    },
+    {
+        "merged": "D:\\Programming\\Android\\Solutions\\TourPilotAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\gr.png",
+        "source": "D:\\Programming\\Android\\Solutions\\TourPilotAS\\app\\src\\main\\res\\drawable-hdpi\\gr.png"
     },
     {
         "merged": "D:\\Programming\\Android\\Solutions\\TourPilotAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\feet.png",
@@ -70,6 +70,10 @@
     {
         "merged": "D:\\Programming\\Android\\Solutions\\TourPilotAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_action_accept.png",
         "source": "D:\\Programming\\Android\\Solutions\\TourPilotAS\\app\\src\\main\\res\\drawable-hdpi\\ic_action_accept.png"
+    },
+    {
+        "merged": "D:\\Programming\\Android\\Solutions\\TourPilotAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_dots_vertical.png",
+        "source": "D:\\Programming\\Android\\Solutions\\TourPilotAS\\app\\src\\main\\res\\drawable-hdpi\\ic_dots_vertical.png"
     },
     {
         "merged": "D:\\Programming\\Android\\Solutions\\TourPilotAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_action_empty.png",
