@@ -4,7 +4,8 @@
         android:id="@+id/empty"
         android:icon="@drawable/ic_dots_vertical"
         android:orderInCategory="101"
-        app:showAsAction="always">
+        app:showAsAction="always"
+        >
         <menu>
             <item
                 android:id="@+id/action_show_program_info"

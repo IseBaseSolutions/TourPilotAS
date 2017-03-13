@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="isebase.cognito.tourpilot"
     android:versionCode="5"
-    android:versionName="1093" >
+    android:versionName="1094" >
 
     <!--
          If the user does not need to activate the physical buttons
@@ -20,7 +20,7 @@
 
     <uses-sdk
         android:minSdkVersion="7"
-        android:targetSdkVersion="17"
+        android:targetSdkVersion="23"
         tools:overrideLibrary="android.support.v7.appcompat,android.support.v4,android.support.graphics.drawable" />
 
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />

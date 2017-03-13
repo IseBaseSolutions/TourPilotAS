@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="isebase.cognito.tourpilot"
     android:versionCode="5"
-    android:versionName="1093" >
+    android:versionName="1094" >
     <!--
          If the user does not need to activate the physical buttons
     	we can set android:targetSdkVersion to 19 or higher
@@ -13,7 +13,7 @@
     -->
     <uses-sdk
         android:minSdkVersion="7"
-        android:targetSdkVersion="17" />
+        android:targetSdkVersion="23" />
 
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />

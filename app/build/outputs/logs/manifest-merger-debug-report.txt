@@ -1,311 +1,311 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:2:1-156:12
+ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:2:1-156:12
 	package
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:4:5-40
-		INJECTED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml
-		INJECTED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:4:5-40
+		INJECTED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml
+		INJECTED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml
 	android:versionName
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:6:5-31
-		INJECTED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml
-		INJECTED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:6:5-31
+		INJECTED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml
+		INJECTED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml
 	xmlns:tools
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:3:5-51
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:5:5-28
-		INJECTED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml
-		INJECTED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:5:5-28
+		INJECTED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml
+		INJECTED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:2:11-69
 uses-sdk
-ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:21:5-24:117
-MERGED from [com.android.support:appcompat-v7:23.2.0] C:\Users\KOSTYAN\.android\build-cache\00d8114b10cf420441fb55ceee0ad72a64bb41e4\output\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:animated-vector-drawable:23.2.0] C:\Users\KOSTYAN\.android\build-cache\5c8189cfb1d6805162498598caf3859cb79c7aae\output\AndroidManifest.xml:5:5-44
-MERGED from [com.android.support:support-vector-drawable:23.2.0] C:\Users\KOSTYAN\.android\build-cache\d38d8c22ed6041d78d23c55a5dee628727913d09\output\AndroidManifest.xml:5:5-43
-MERGED from [com.android.support:support-v4:23.2.0] C:\Users\KOSTYAN\.android\build-cache\1f906157fefcc2cb13347fda175c06e598d48d53\output\AndroidManifest.xml:20:5-43
+ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:21:5-24:117
+MERGED from [com.android.support:appcompat-v7:23.2.0] C:\Users\Admin\.android\build-cache\e2f227f975bdb6825cd7b04488d4d42cf93c7576\output\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:23.2.0] C:\Users\Admin\.android\build-cache\3a9eb1bbf3606b0b32d27a2c4ac2b4da9095eb50\output\AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:support-vector-drawable:23.2.0] C:\Users\Admin\.android\build-cache\6af64b22de7a0dce4130a97da06d9e97dadd278c\output\AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-v4:23.2.0] C:\Users\Admin\.android\build-cache\54473d80513fb195b98757f0ff43d4b41eeef7c7\output\AndroidManifest.xml:20:5-43
 	tools:overrideLibrary
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:24:9-114
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:24:9-114
 	android:targetSdkVersion
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:23:9-38
-		INJECTED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml
-		INJECTED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:23:9-38
+		INJECTED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml
+		INJECTED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:22:9-34
-		INJECTED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml
-		INJECTED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:22:9-34
+		INJECTED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml
+		INJECTED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.READ_PHONE_STATE
-ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:26:5-75
+ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:26:5-75
 	android:name
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:26:22-72
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:26:22-72
 uses-permission#android.permission.INTERNET
-ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:27:5-67
+ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:27:5-67
 	android:name
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:27:22-64
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:27:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:28:5-79
+ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:28:5-79
 	android:name
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:28:22-76
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:28:22-76
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:29:5-79
+ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:29:5-79
 	android:name
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:29:22-76
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:29:22-76
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:30:5-81
+ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:30:5-81
 	android:name
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:30:22-78
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:30:22-78
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:31:5-81
+ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:31:5-81
 	android:name
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:31:22-78
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:31:22-78
 uses-permission#android.permission.CALL_PHONE
-ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:32:5-69
+ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:32:5-69
 	android:name
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:32:22-66
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:32:22-66
 uses-permission#android.permission.INSTALL_PACKAGES
-ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:33:5-75
+ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:33:5-75
 	android:name
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:33:22-72
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:33:22-72
 uses-permission#android.permission.SET_TIME_ZONE
-ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:34:5-72
+ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:34:5-72
 	android:name
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:34:22-69
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:34:22-69
 uses-permission#android.permission.SET_TIME
-ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:35:5-67
+ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:35:5-67
 	android:name
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:35:22-64
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:35:22-64
 uses-permission#android.permission.VIBRATE
-ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:36:5-66
+ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:36:5-66
 	android:name
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:36:22-63
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:36:22-63
 uses-permission#android.permission.GET_TASKS
-ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:37:5-68
+ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:37:5-68
 	android:name
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:37:22-65
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:37:22-65
 uses-permission#android.permission.READ_LOGS
-ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:38:5-68
+ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:38:5-68
 	android:name
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:38:22-65
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:38:22-65
 application
-ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:40:5-154:19
-MERGED from [com.android.support:appcompat-v7:23.2.0] C:\Users\KOSTYAN\.android\build-cache\00d8114b10cf420441fb55ceee0ad72a64bb41e4\output\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:animated-vector-drawable:23.2.0] C:\Users\KOSTYAN\.android\build-cache\5c8189cfb1d6805162498598caf3859cb79c7aae\output\AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:support-vector-drawable:23.2.0] C:\Users\KOSTYAN\.android\build-cache\d38d8c22ed6041d78d23c55a5dee628727913d09\output\AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:support-v4:23.2.0] C:\Users\KOSTYAN\.android\build-cache\1f906157fefcc2cb13347fda175c06e598d48d53\output\AndroidManifest.xml:22:5-20
+ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:40:5-154:19
+MERGED from [com.android.support:appcompat-v7:23.2.0] C:\Users\Admin\.android\build-cache\e2f227f975bdb6825cd7b04488d4d42cf93c7576\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:23.2.0] C:\Users\Admin\.android\build-cache\3a9eb1bbf3606b0b32d27a2c4ac2b4da9095eb50\output\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-vector-drawable:23.2.0] C:\Users\Admin\.android\build-cache\6af64b22de7a0dce4130a97da06d9e97dadd278c\output\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-v4:23.2.0] C:\Users\Admin\.android\build-cache\54473d80513fb195b98757f0ff43d4b41eeef7c7\output\AndroidManifest.xml:22:5-20
 	android:label
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:44:9-41
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:44:9-41
 	android:hardwareAccelerated
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:42:9-44
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:42:9-44
 	android:allowBackup
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:41:9-35
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:41:9-35
 	android:icon
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:43:9-45
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:43:9-45
 	android:largeHeap
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:45:9-33
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:45:9-33
 	android:theme
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:46:9-42
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:46:9-42
 activity#isebase.cognito.tourpilot.Activity.WorkersOptionActivity.WorkerOptionActivity
-ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:47:9-57:20
+ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:47:9-57:20
 	android:screenOrientation
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:50:13-49
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:50:13-49
 	android:label
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:49:13-45
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:49:13-45
 	android:windowSoftInputMode
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:51:13-52
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:51:13-52
 	android:name
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:48:13-80
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:48:13-80
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:52:13-56:29
+ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:52:13-56:29
 action#android.intent.action.MAIN
-ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:53:17-69
+ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:53:17-69
 	android:name
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:53:25-66
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:53:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:55:17-77
+ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:55:17-77
 	android:name
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:55:27-74
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:55:27-74
 activity#isebase.cognito.tourpilot.Activity.AdditionalTasks.CatalogsActivity
-ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:58:9-60:52
+ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:58:9-60:52
 	android:screenOrientation
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:60:13-49
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:60:13-49
 	android:name
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:59:13-70
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:59:13-70
 activity#isebase.cognito.tourpilot.Activity.AdditionalTasks.AdditionalTasksActivity
-ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:61:9-63:52
+ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:61:9-63:52
 	android:screenOrientation
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:63:13-49
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:63:13-49
 	android:name
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:62:13-77
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:62:13-77
 activity#isebase.cognito.tourpilot.Activity.UserRemarksActivity
-ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:64:9-66:52
+ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:64:9-66:52
 	android:screenOrientation
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:66:13-49
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:66:13-49
 	android:name
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:65:13-57
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:65:13-57
 activity#isebase.cognito.tourpilot.Activity.InfoActivity
-ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:67:9-69:52
+ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:67:9-69:52
 	android:screenOrientation
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:69:13-49
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:69:13-49
 	android:name
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:68:13-50
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:68:13-50
 activity#isebase.cognito.tourpilot.Activity.AddressPatientActivity
-ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:70:9-72:52
+ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:70:9-72:52
 	android:screenOrientation
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:72:13-49
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:72:13-49
 	android:name
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:71:13-60
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:71:13-60
 activity#isebase.cognito.tourpilot.Activity.DoctorsActivity
-ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:73:9-75:52
+ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:73:9-75:52
 	android:screenOrientation
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:75:13-49
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:75:13-49
 	android:name
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:74:13-53
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:74:13-53
 activity#isebase.cognito.tourpilot.Activity.RelativesActivity
-ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:76:9-78:52
+ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:76:9-78:52
 	android:screenOrientation
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:78:13-49
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:78:13-49
 	android:name
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:77:13-55
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:77:13-55
 activity#isebase.cognito.tourpilot.Activity.CommentsActivity
-ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:79:9-81:52
+ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:79:9-81:52
 	android:screenOrientation
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:81:13-49
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:81:13-49
 	android:name
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:80:13-54
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:80:13-54
 activity#isebase.cognito.tourpilot.Activity.SynchronizationActivity
-ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:82:9-84:52
+ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:82:9-84:52
 	android:screenOrientation
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:84:13-49
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:84:13-49
 	android:name
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:83:13-61
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:83:13-61
 activity#isebase.cognito.tourpilot.Activity.ToursActivity
-ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:85:9-87:52
+ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:85:9-87:52
 	android:screenOrientation
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:87:13-49
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:87:13-49
 	android:name
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:86:13-51
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:86:13-51
 activity#isebase.cognito.tourpilot.Activity.BaseActivities.BaseActivity
-ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:88:9-90:52
+ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:88:9-90:52
 	android:screenOrientation
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:90:13-49
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:90:13-49
 	android:name
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:89:13-65
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:89:13-65
 activity#isebase.cognito.tourpilot.Activity.PatientsActivity
-ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:91:9-93:52
+ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:91:9-93:52
 	android:screenOrientation
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:93:13-49
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:93:13-49
 	android:name
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:92:13-54
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:92:13-54
 activity#isebase.cognito.tourpilot.Activity.ManualInputActivity
-ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:94:9-96:52
+ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:94:9-96:52
 	android:screenOrientation
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:96:13-49
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:96:13-49
 	android:name
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:95:13-57
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:95:13-57
 activity#isebase.cognito.tourpilot.Activity.AdditionalWorksActivity
-ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:97:9-99:52
+ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:97:9-99:52
 	android:screenOrientation
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:99:13-49
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:99:13-49
 	android:name
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:98:13-61
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:98:13-61
 activity#isebase.cognito.tourpilot.Activity.AdditionalEmploymentsActivity
-ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:100:9-102:52
+ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:100:9-102:52
 	android:screenOrientation
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:102:13-49
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:102:13-49
 	android:name
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:101:13-67
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:101:13-67
 activity#isebase.cognito.tourpilot.Activity.VerificationActivity
-ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:103:9-105:52
+ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:103:9-105:52
 	android:screenOrientation
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:105:13-49
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:105:13-49
 	android:name
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:104:13-58
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:104:13-58
 activity#isebase.cognito.tourpilot.Activity.BaseActivities.BaseTimeSyncActivity
-ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:106:9-108:52
+ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:106:9-108:52
 	android:screenOrientation
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:108:13-49
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:108:13-49
 	android:name
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:107:13-73
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:107:13-73
 service#isebase.cognito.tourpilot.Gps.Service.GPSLogger
-ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:110:9-116:19
+ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:110:9-116:19
 	android:exported
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:112:13-37
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:112:13-37
 	android:name
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:111:13-50
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:111:13-50
 intent-filter#service
-ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:113:13-115:29
+ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:113:13-115:29
 action#service
-ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:114:17-50
+ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:114:17-50
 	android:name
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:114:25-47
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:114:25-47
 activity#isebase.cognito.tourpilot.Activity.TasksAssessmentsActivity.TasksAssessementsActivity
-ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:117:9-119:52
+ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:117:9-119:52
 	android:screenOrientation
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:119:13-49
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:119:13-49
 	android:name
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:118:13-88
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:118:13-88
 activity#isebase.cognito.tourpilot.Activity.QuestionActivities.QuestionsActivity
-ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:120:9-122:52
+ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:120:9-122:52
 	android:screenOrientation
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:122:13-49
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:122:13-49
 	android:name
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:121:13-74
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:121:13-74
 activity#isebase.cognito.tourpilot.Activity.QuestionActivities.BradenSkalaActivity
-ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:123:9-125:52
+ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:123:9-125:52
 	android:screenOrientation
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:125:13-49
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:125:13-49
 	android:name
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:124:13-76
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:124:13-76
 activity#isebase.cognito.tourpilot.Activity.QuestionActivities.PainAnalyseSkalaActivity
-ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:126:9-128:52
+ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:126:9-128:52
 	android:screenOrientation
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:128:13-49
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:128:13-49
 	android:name
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:127:13-81
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:127:13-81
 activity#isebase.cognito.tourpilot.Activity.QuestionActivities.FallenFactorSkalaActivity
-ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:129:9-131:52
+ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:129:9-131:52
 	android:screenOrientation
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:131:13-49
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:131:13-49
 	android:name
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:130:13-82
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:130:13-82
 activity#isebase.cognito.tourpilot.Activity.QuestionActivities.NortonSkalaActivity
-ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:132:9-134:52
+ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:132:9-134:52
 	android:screenOrientation
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:134:13-49
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:134:13-49
 	android:name
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:133:13-76
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:133:13-76
 activity#isebase.cognito.tourpilot.Activity.ActualWorkersActivity
-ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:135:9-137:52
+ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:135:9-137:52
 	android:screenOrientation
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:137:13-49
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:137:13-49
 	android:name
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:136:13-59
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:136:13-59
 activity#isebase.cognito.tourpilot.Activity.QuestionActivities.BradenSkalaPictureInfoActivity
-ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:138:9-140:52
+ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:138:9-140:52
 	android:screenOrientation
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:140:13-49
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:140:13-49
 	android:name
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:139:13-87
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:139:13-87
 activity#isebase.cognito.tourpilot.Activity.QuestionActivities.KontrakturPictureInfoActivity
-ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:141:9-143:52
+ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:141:9-143:52
 	android:screenOrientation
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:143:13-49
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:143:13-49
 	android:name
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:142:13-86
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:142:13-86
 activity#isebase.cognito.tourpilot.Activity.QuestionActivities.RelatedQuestionsActivity
-ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:144:9-146:52
+ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:144:9-146:52
 	android:screenOrientation
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:146:13-49
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:146:13-49
 	android:name
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:145:13-81
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:145:13-81
 activity#isebase.cognito.tourpilot.Activity.SendLogActivity
-ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:147:9-149:52
+ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:147:9-149:52
 	android:screenOrientation
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:149:13-49
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:149:13-49
 	android:name
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:148:13-53
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:148:13-53
 activity#isebase.cognito.tourpilot.Activity.TourOncomingInfoActivity
-ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:150:9-152:52
+ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:150:9-152:52
 	android:screenOrientation
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:152:13-49
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:152:13-49
 	android:name
-		ADDED from D:\Programming\Android\Solutions\TourPilotAS\app\src\main\AndroidManifest.xml:151:13-62
+		ADDED from D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\src\main\AndroidManifest.xml:151:13-62

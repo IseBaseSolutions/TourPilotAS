@@ -1,4 +1,4 @@
-#Sat Mar 11 13:52:59 EET 2017
-base.0=D\:\\Programming\\Android\\Solutions\\TourPilotAS\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
+#Mon Mar 13 12:57:59 EET 2017
+base.0=D\:\\ANDROID\\AndroidStudioProjects\\TourPilotAS\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
 renamed.0=classes.dex
-file.0=D\:\\Programming\\Android\\Solutions\\TourPilotAS\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex
+file.0=D\:\\ANDROID\\AndroidStudioProjects\\TourPilotAS\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex

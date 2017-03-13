@@ -3,30 +3,30 @@
 
     <item
         is-multidex="false"
-        jar="D:\Programming\Android\Solutions\TourPilotAS\app\libs\ormlite-core-4.48.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="e579bd2905d0399af5029aaaf9817d5fa0ca88a5">
-        <dex dex="D:\Programming\Android\Solutions\TourPilotAS\app\build\intermediates\pre-dexed\debug\ormlite-core-4.48_597481c31de15047f644b49a59346fb9efcb59e0.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\Programming\Android\Solutions\TourPilotAS\app\libs\ormlite-android-4.48.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="afa06f539a4026c10b247386312aa67404b80a16">
-        <dex dex="D:\Programming\Android\Solutions\TourPilotAS\app\build\intermediates\pre-dexed\debug\ormlite-android-4.48_bce3f29f49aefb22ae89e5a4b37a95493392cb58.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\Programming\Android\Solutions\TourPilotAS\app\libs\com.google.guava_1.6.0.jar"
+        jar="D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\libs\com.google.guava_1.6.0.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.2"
         sha1="92ae3566438bd0095feca55bf4a914d8cb162855">
-        <dex dex="D:\Programming\Android\Solutions\TourPilotAS\app\build\intermediates\pre-dexed\debug\com.google.guava_1.6.0_b9463f820d3e6e616bc0f33d1f49c28daaae9878.jar" />
+        <dex dex="D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\build\intermediates\pre-dexed\debug\com.google.guava_1.6.0_6ac207b73bc0d322d2c589400bce910a10f702fc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\libs\ormlite-core-4.48.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e579bd2905d0399af5029aaaf9817d5fa0ca88a5">
+        <dex dex="D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\build\intermediates\pre-dexed\debug\ormlite-core-4.48_9f4eb150faa16bdd691c9b255e92c8035e3dcb82.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\libs\ormlite-android-4.48.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="afa06f539a4026c10b247386312aa67404b80a16">
+        <dex dex="D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\build\intermediates\pre-dexed\debug\ormlite-android-4.48_59c70d83b4d51210f8231e621b346c5a9b126be4.jar" />
     </item>
 
 </items>
