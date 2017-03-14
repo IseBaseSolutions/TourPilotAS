@@ -55,6 +55,7 @@ public class TasksAssessementsActivity extends BaseTimeSyncActivity implements B
 		setContentView(R.layout.activity_worker_option);
 		StaticResources.setBaseContext(getBaseContext());
 		instance = this;
+		reloadData();
 		// Create the adapter that will return a fragment for each of the three
 		// primary sections of the app.
 		mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
@@ -62,7 +63,6 @@ public class TasksAssessementsActivity extends BaseTimeSyncActivity implements B
 		mViewPager = (ViewPager) findViewById(R.id.pager);
 		mViewPager.setAdapter(mSectionsPagerAdapter);
 		getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
-		reloadData();
 		setTimeSync(true);
 		//switchToLastActivity();
 	}

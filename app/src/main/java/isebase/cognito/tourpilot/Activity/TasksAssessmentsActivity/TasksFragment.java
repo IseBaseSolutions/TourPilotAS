@@ -292,7 +292,7 @@ public class TasksFragment extends Fragment implements BaseDialogListener {
 							+ ". Möchten Sie den Vorgang fortsetzen?";
 			BaseDialog dialog = new BaseDialog(getString(R.string.attention), message);
 			dialog.show(getFragmentManager(), "dialogDateCompare");
-			getFragmentManager().executePendingTransactions();			
+			getFragmentManager().executePendingTransactions();
 		} else
 			startTask();		
 	}
