@@ -86,7 +86,7 @@ public class TasksAssessementsActivity extends BaseTimeSyncActivity implements B
 		MenuItem relativesMenu = menu.findItem(R.id.relatives);
 		MenuItem notesMenu = menu.findItem(R.id.notes);
 		MenuItem extraAssessments = menu.findItem(R.id.extraAssessments);
-		MenuItem workersInfo = menu.findItem(R.id.workers_info);
+		MenuItem workersInfo = menu.findItem(R.id.tasks_workers_info);
 		infoMenu.setEnabled(tasksFragment.getInfos().size() != 0);
 		commentsMenu.setEnabled(!(tasksFragment.getPatientRemark() == null || tasksFragment.getPatientRemark().getName().length() == 0));
 		diagnoseMenu.setEnabled(!(tasksFragment.getDiagnose() == null || tasksFragment.getDiagnose().getName().length() == 0));

@@ -2,7 +2,7 @@ package isebase.cognito.tourpilot.Dialogs.Tasks;
 
 import isebase.cognito.tourpilot.Data.Task.Task;
 import isebase.cognito.tourpilot.Dialogs.BaseDialogListener;
-import isebase.cognito.tourpilot.StaticResources.StaticResources;
+import isebase.cognito.tourpilot.R;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -16,6 +16,7 @@ import android.support.v4.app.DialogFragment;
 import android.text.Editable;
 import android.text.InputFilter;
 import android.text.TextWatcher;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -42,7 +43,6 @@ public class StandardTaskDialog extends DialogFragment{
 
 	public StandardTaskDialog(Task task, String title, String hint,
 			int typeInput) {
-		this();
 		this.task = task;
 		this.title = title;
 		this.hint = hint;
@@ -50,15 +50,7 @@ public class StandardTaskDialog extends DialogFragment{
 		this.isViewMode = false;
 	}
 
-	public StandardTaskDialog(Task task, String title, String value,
-			String hint, int typeInput) {
-		this(task, title, hint, typeInput);
-		this.isViewMode = true;
-		etValue.setText(value);
-	}
-
-	protected StandardTaskDialog() {
-		etValue = new EditText(StaticResources.getBaseContext());
+	protected StandardTaskDialog(){
 	}
 
 	@Override
@@ -66,7 +58,10 @@ public class StandardTaskDialog extends DialogFragment{
 		AlertDialog.Builder adb = new AlertDialog.Builder(getActivity());
 		adb.setTitle(title);
 		setCancelable(false);
-		etValue.setTextColor(etValue.getHintTextColors().getDefaultColor());
+		LayoutInflater inflater = getActivity().getLayoutInflater();
+		View view = inflater.inflate(R.layout.dialog_standart_task, null);
+		adb.setView(view);
+		etValue = (EditText) view.findViewById(R.id.etStandart);
 		etValue.setHint(hint);
 		etValue.setInputType(typeInput);
 		etValue.setEnabled(!isViewMode);
@@ -100,7 +95,6 @@ public class StandardTaskDialog extends DialogFragment{
 			
 		});
 
-		adb.setView(etValue);
 		if (!isViewMode)
 			adb.setPositiveButton(isebase.cognito.tourpilot.R.string.ok,
 					new DialogInterface.OnClickListener() {

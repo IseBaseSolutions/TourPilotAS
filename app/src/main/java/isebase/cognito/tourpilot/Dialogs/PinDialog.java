@@ -37,7 +37,6 @@ public class PinDialog extends BaseDialog {
 		adb.setIcon(android.R.drawable.ic_partial_secure);
 		adb.setTitle(isebase.cognito.tourpilot.R.string.pin_code);
 		etPin = (EditText) view.findViewById(R.id.etPin);
-		etPin.setTextColor(etPin.getHintTextColors().getDefaultColor());
 		chbSavePin = (CheckBox) view.findViewById(R.id.chbSavePin);
 		chbSavePin.setTextColor(etPin.getHintTextColors().getDefaultColor());
 		adb.setPositiveButton(isebase.cognito.tourpilot.R.string.ok,

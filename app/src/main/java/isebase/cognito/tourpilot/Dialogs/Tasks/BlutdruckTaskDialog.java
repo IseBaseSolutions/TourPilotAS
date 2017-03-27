@@ -3,7 +3,6 @@ package isebase.cognito.tourpilot.Dialogs.Tasks;
 import isebase.cognito.tourpilot.R;
 import isebase.cognito.tourpilot.Data.Task.Task;
 import isebase.cognito.tourpilot.Dialogs.BaseDialogListener;
-import isebase.cognito.tourpilot.StaticResources.StaticResources;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
@@ -11,10 +10,10 @@ import android.content.DialogInterface;
 import android.os.Bundle;
 import android.text.InputFilter;
 import android.text.InputType;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.LinearLayout;
 
 public class BlutdruckTaskDialog extends StandardTaskDialog{
 	
@@ -35,20 +34,7 @@ public class BlutdruckTaskDialog extends StandardTaskDialog{
 		this.isViewMode = false;
 	}
 	
-	public BlutdruckTaskDialog(Task task, String value){
-		this();
-		this.task = task;
-		this.isViewMode = true;
-		String[] parsedData = value.split("\\:");
-		String minValue = parsedData.length > 0 ? parsedData[0] : "";
-		String maxValue = parsedData.length > 1 ? parsedData[1] : "";
-		etMaxValue.setText(maxValue);
-		etMinValue.setText(minValue);
-	}
-	
 	private BlutdruckTaskDialog(){
-		etMinValue = new EditText(StaticResources.getBaseContext());
-		etMaxValue = new EditText(StaticResources.getBaseContext());
 	}
 
 	@Override
@@ -56,23 +42,22 @@ public class BlutdruckTaskDialog extends StandardTaskDialog{
 		AlertDialog.Builder adb = new AlertDialog.Builder(getActivity());
 		adb.setTitle(getString(R.string.blood_pressure));
 		setCancelable(false);
-		etMinValue.setTextColor(etMinValue.getHintTextColors().getDefaultColor());
+        LayoutInflater inflater = getActivity().getLayoutInflater();
+        View view = inflater.inflate(R.layout.dialog_blutdruck_task, null);
+        adb.setView(view);
+
+        etMinValue = (EditText) view.findViewById(R.id.etMinValue);
 		etMinValue.setHint(getString(R.string.min));
 		etMinValue.setInputType(InputType.TYPE_CLASS_NUMBER | InputType.TYPE_NUMBER_FLAG_SIGNED);
 		etMinValue.setEnabled(!isViewMode);
 		etMinValue.setFilters(new InputFilter[] {new InputFilter.LengthFilter(10)});
-		
-		etMaxValue.setTextColor(etMaxValue.getHintTextColors().getDefaultColor());
+
+        etMaxValue = (EditText) view.findViewById(R.id.etMaxValue);
 		etMaxValue.setHint(getString(R.string.max));
 		etMaxValue.setInputType(InputType.TYPE_CLASS_NUMBER | InputType.TYPE_NUMBER_FLAG_SIGNED);
 		etMaxValue.setEnabled(!isViewMode);
 		etMaxValue.setFilters(new InputFilter[] {new InputFilter.LengthFilter(10)});
-		
-		LinearLayout ll = new LinearLayout(StaticResources.getBaseContext());
-		ll.addView(etMaxValue);
-		ll.addView(etMinValue);
-		
-		adb.setView(ll);
+
 		if(!isViewMode)
 			adb.setPositiveButton(isebase.cognito.tourpilot.R.string.ok,
 					new DialogInterface.OnClickListener() {
