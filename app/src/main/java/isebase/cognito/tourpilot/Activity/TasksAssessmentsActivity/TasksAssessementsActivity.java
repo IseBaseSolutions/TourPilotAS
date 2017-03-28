@@ -155,7 +155,7 @@ public class TasksAssessementsActivity extends BaseTimeSyncActivity implements B
 		case R.id.diagnose:
 			tasksFragment.showDiagnose();
 			return true;
-		case R.id.workers_info:
+		case R.id.tasks_workers_info:
 			startTourOncomingInfo(tasksFragment.workersInfo.getId());
 			return true;
 		default:
