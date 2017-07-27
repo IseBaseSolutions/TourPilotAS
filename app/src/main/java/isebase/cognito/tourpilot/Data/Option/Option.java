@@ -309,8 +309,11 @@ public class Option {
 	}
 
 	public String getDeviceID() {
-		return phoneManager.getDeviceId() == null ? "" : phoneManager
-				.getDeviceId().toString();
+		try {
+			return phoneManager.getDeviceId() == null ? "" : phoneManager.getDeviceId();
+		} catch (Exception ex){
+			return "";
+		}
 	}
 
 	public static Option Instance() {

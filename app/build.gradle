@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion "25.0.2"
+    compileSdkVersion 22
+    buildToolsVersion '22.0.1'
 
     defaultConfig {
         applicationId "isebase.cognito.tourpilot"
         minSdkVersion 7
-        targetSdkVersion 23
+        targetSdkVersion 22
     }
 
     buildTypes {
@@ -18,9 +18,18 @@ android {
     }
 }
 
+allprojects {
+    repositories {
+        jcenter()
+        maven {
+            url "https://maven.google.com"
+        }
+    }
+}
+
 dependencies {
-    compile 'com.android.support:appcompat-v7:23.2.0'
     compile files('libs/com.google.guava_1.6.0.jar')
     compile files('libs/ormlite-android-4.48.jar')
     compile files('libs/ormlite-core-4.48.jar')
+    compile 'com.android.support:appcompat-v7:22.2.0'
 }

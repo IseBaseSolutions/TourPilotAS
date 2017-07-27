@@ -97,9 +97,9 @@
     <string name="street">Strasse:</string>
     <string name="zip">PLZ:</string>
     <string name="city">Ort:</string>
-    <string name="phone">Telefon-Nr.:</string>
-    <string name="phone_private">Privat Tel.-Nr.:</string>
-    <string name="phone_mobile">Handy Nr.:</string>
+    <string name="phone">Mobil. (dstl.):</string>
+    <string name="phone_private">Telefon (priv.):</string>
+    <string name="phone_mobile">Mobiltelefon:</string>
 
     <!-- Defaults -->
     <string name="def_empty_time">00:00</string>
@@ -155,7 +155,7 @@
     <string name="dialog_reached_patient">Haben Sie den Patienten erreicht?</string>
     <string name="dialog_send">Klicken Sie auf Senden, um Daten zu verschicken. Wenn Sie Daten noch überprüfen möchten, klicken Sie auf Bearbeiten.</string>
     <string name="dialog_license_over">Kein Datenabgleich möglich. Alle Lizenzen werden bereits benutzt. Das Programm wird geschlossen.</string>
-    <string name="dialog_interrupt">Datenabglieich zur Zeit ist nicht möglich. Versuchen Sie bitte später.</string>
+    <string name="dialog_interrupt">Datenabgleich zur Zeit ist nicht möglich. Versuchen Sie bitte später.</string>
     <string name="dialog_new_version">Neue Version</string>
     <string name="dialog_update_program">Neue Programmversion liegt vor. Soll sie installiert werden?</string>
     <string name="dialog_start_gps">Soll die Route zu dem gewählten Patienten verlegt werden?</string>
