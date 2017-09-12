@@ -195,7 +195,7 @@ public class AdditionalEmploymentsActivity extends BaseActivity implements BaseD
 	private void reloadData() {
 		newEmployments = HelperFactory.getHelper().getEmploymentDAO().load(Employment.PILOT_TOUR_ID_FIELD, String.valueOf(Option.Instance().getPilotTourID()));
 		for (Employment newEmployment : newEmployments)
-			if (!newEmployment.isDone() && !newEmployment.isAdditionalWork())
+			if (!newEmployment.isDone() && !newEmployment.isAdditionalWork() && (!newEmployment.isFromMobile() || additionalEmploymentsMode != eAdditionalPatientsMode.removeIP))
 				addEmployments.add(new AdditionalEmployment(newEmployment.getId(), String.format("%s %s\n%s", newEmployment.getTime(), newEmployment.getName(), newEmployment.getDayPart())));
 	}
 	

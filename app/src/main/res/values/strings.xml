@@ -3,6 +3,7 @@
 
     <!-- Menus -->
     <string name="menu_undone_all_tasks">Einsatz ausgefallen</string>
+    <string name="menu_remove_manual_tasks">Einsatz löschen</string>
     <string name="menu_catalogs">Zusätzliche Leistungen</string>
     <string name="menu_notes">Besuchsvermerke</string>
     <string name="menu_info">Info</string>

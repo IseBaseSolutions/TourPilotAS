@@ -104,21 +104,21 @@ public class PatientsActivity extends BaseActivity implements
 		MenuItem actualWorkers = menu.findItem(R.id.action_actual_workers);
 		MenuItem workersInfo = menu.findItem(R.id.workers_info);
 		MenuItem carsInfo = menu.findItem(R.id.cars_info);
-		commonTourMenu.setEnabled(false);
-		tourInfoMenu.setEnabled(false);
-		additionalWork.setEnabled(false);
-		illnessTourMenu.setEnabled(false);
-		allPatientsMenu.setEnabled(false);
+		commonTourMenu.setVisible(false);
+		tourInfoMenu.setVisible(false);
+		additionalWork.setVisible(false);
+		illnessTourMenu.setVisible(false);
+		allPatientsMenu.setVisible(false);
 		if (pilotTour != null && DateUtils.isToday(pilotTour.getPlanDate())) {
-			commonTourMenu.setEnabled(pilotTour.getIsCommonTour());
-			additionalWork.setEnabled(true);
-			illnessTourMenu.setEnabled(true);
-			allPatientsMenu.setEnabled(true);
+			commonTourMenu.setVisible(pilotTour.getIsCommonTour());
+			additionalWork.setVisible(true);
+			illnessTourMenu.setVisible(true);
+			allPatientsMenu.setVisible(true);
 		}
-		tourInfoMenu.setEnabled(infos.size() != 0);
-		workersInfo.setEnabled(this.workersInfo != null);
-		carsInfo.setEnabled(this.carsInfo != null);
-		actualWorkers.setEnabled(Option.Instance().isWorkerPhones());
+		tourInfoMenu.setVisible(infos.size() != 0);
+		workersInfo.setVisible(this.workersInfo != null);
+		carsInfo.setVisible(this.carsInfo != null);
+		actualWorkers.setVisible(Option.Instance().isWorkerPhones());
 		return true;
 	}
 

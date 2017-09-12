@@ -1,5 +1,6 @@
 package isebase.cognito.tourpilot.Activity.TasksAssessmentsActivity;
 
+import isebase.cognito.tourpilot.Data.BaseObject.BaseObject;
 import isebase.cognito.tourpilot.R;
 import isebase.cognito.tourpilot.Activity.TourOncomingInfoActivity;
 import isebase.cognito.tourpilot.Activity.BaseActivities.BaseTimeSyncActivity;
@@ -77,6 +78,7 @@ public class TasksAssessementsActivity extends BaseTimeSyncActivity implements B
 	public boolean onPrepareOptionsMenu(Menu menu) {
 		MenuItem manualInputMenu = menu.findItem(R.id.manualInput);
 		MenuItem undoneTasksMenu = menu.findItem(R.id.cancelAllTasks);
+		MenuItem removeManualTasksMenu = menu.findItem(R.id.removeManualTasks);
 		MenuItem catalogsMenu = menu.findItem(R.id.catalogs);
 		MenuItem infoMenu = menu.findItem(R.id.info);
 		MenuItem commentsMenu = menu.findItem(R.id.comments);
@@ -87,31 +89,33 @@ public class TasksAssessementsActivity extends BaseTimeSyncActivity implements B
 		MenuItem notesMenu = menu.findItem(R.id.notes);
 		MenuItem extraAssessments = menu.findItem(R.id.extraAssessments);
 		MenuItem workersInfo = menu.findItem(R.id.tasks_workers_info);
-		infoMenu.setEnabled(tasksFragment.getInfos().size() != 0);
-		commentsMenu.setEnabled(!(tasksFragment.getPatientRemark() == null || tasksFragment.getPatientRemark().getName().length() == 0));
-		diagnoseMenu.setEnabled(!(tasksFragment.getDiagnose() == null || tasksFragment.getDiagnose().getName().length() == 0));
-		notesMenu.setEnabled(!tasksFragment.getStartTask().getRealDate().equals(DateUtils.EmptyDate));
-		catalogsMenu.setEnabled(tasksFragment.isClickable());
-		undoneTasksMenu.setEnabled(DateUtils.isToday(tasksFragment.employment.getDate()));
-		manualInputMenu.setEnabled(!tasksFragment.isEmploymentDone() && !tasksFragment.isClickable() && DateUtils.isToday(tasksFragment.employment.getDate()));
+		infoMenu.setVisible(tasksFragment.getInfos().size() != 0);
+		commentsMenu.setVisible(!(tasksFragment.getPatientRemark() == null || tasksFragment.getPatientRemark().getName().length() == 0));
+		diagnoseMenu.setVisible(!(tasksFragment.getDiagnose() == null || tasksFragment.getDiagnose().getName().length() == 0));
+		notesMenu.setVisible(!tasksFragment.getStartTask().getRealDate().equals(DateUtils.EmptyDate));
+		catalogsMenu.setVisible(tasksFragment.isClickable());
+		undoneTasksMenu.setVisible(DateUtils.isToday(tasksFragment.employment.getDate()) && !tasksFragment.employment.isFromMobile());
+		manualInputMenu.setVisible(!tasksFragment.isEmploymentDone() && !tasksFragment.isClickable() && DateUtils.isToday(tasksFragment.employment.getDate()));
+		removeManualTasksMenu.setVisible(!tasksFragment.isEmploymentDone() && tasksFragment.employment.isFromMobile() && !tasksFragment.isClickable());
 		extraAssessments.setVisible(false);
 		if (assessmentsFragment != null) {
-			extraAssessments.setEnabled(!tasksFragment.getStartTask().getRealDate().equals(DateUtils.EmptyDate) && !tasksFragment.isEmploymentDone() && assessmentsFragment.allCategoriesCount != assessmentsFragment.categories.size());
-			extraAssessments.setVisible(true);
+			extraAssessments.setVisible(!tasksFragment.getStartTask().getRealDate().equals(DateUtils.EmptyDate) && !tasksFragment.isEmploymentDone()
+					&& assessmentsFragment.allCategoriesCount != assessmentsFragment.categories.size());
+			//extraAssessments.setVisible(true);
 		}
 
 		if(tasksFragment.isEmploymentDone()) {
-			undoneTasksMenu.setEnabled(false);
-			catalogsMenu.setEnabled(false);
+			undoneTasksMenu.setVisible(false);
+			catalogsMenu.setVisible(false);
 		}
 		if(tasksFragment.employment.isAdditionalWork()) {
-			catalogsMenu.setEnabled(false);
-			diagnoseMenu.setEnabled(false);
-			addresseMenu.setEnabled(false);
-			doctorsMenu.setEnabled(false);
-			relativesMenu.setEnabled(false);	
+			catalogsMenu.setVisible(false);
+			diagnoseMenu.setVisible(false);
+			addresseMenu.setVisible(false);
+			doctorsMenu.setVisible(false);
+			relativesMenu.setVisible(false);
 		}
-		workersInfo.setEnabled(tasksFragment.workersInfo != null);
+		workersInfo.setVisible(tasksFragment.workersInfo != null);
 		return true;
 	}
 	
@@ -127,6 +131,18 @@ public class TasksAssessementsActivity extends BaseTimeSyncActivity implements B
 			if(tasksFragment.isEmploymentDone())
 				return false;
 			tasksFragment.showUndoneDialog();
+			return true;
+		case R.id.removeManualTasks:
+			if(tasksFragment.employment.getIsDone())
+				return false;
+			int employmentID = (int)Option.Instance().getEmploymentID();
+			HelperFactory.getHelper().getEmploymentDAO().delete(employmentID);
+			HelperFactory.getHelper().getTaskDAO().deleteByEmploymentID(employmentID);
+			HelperFactory.getHelper().getUserRemarkDAO().delete(employmentID);
+			if (tasksFragment.activity.hasQuestions)
+				tasksFragment.clearAnswers();
+			tasksFragment.clearEmployment();
+			tasksFragment.startPatientsActivity();
 			return true;
 		case R.id.notes:
 			tasksFragment.startUserRemarksActivity(tasksFragment.SIMPLE_MODE, tasksFragment.ACTIVITY_USERREMARKS_CODE);

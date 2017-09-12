@@ -34,6 +34,11 @@
                 android:title="@string/menu_undone_all_tasks"
                 android:menuCategory="secondary"
                 android:orderInCategory="10" />
+            <item
+                android:id="@+id/removeManualTasks"
+                android:title="@string/menu_remove_manual_tasks"
+                android:menuCategory="secondary"
+                android:orderInCategory="11" />
 
             <item
                 android:id="@+id/catalogs"

@@ -148,8 +148,7 @@ public class TasksFragment extends Fragment implements BaseDialogListener {
 			initDialogs();	
 			reloadData();	
 			fillUpTasks();
-			checkAllIsDone();
-			checkEmploymentIsDone();
+			changeButtonsState();
 			showPatientInfo(false);
 		} catch(Exception e){
 			e.printStackTrace();
@@ -206,15 +205,12 @@ public class TasksFragment extends Fragment implements BaseDialogListener {
 	public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
 		super.onCreateOptionsMenu(menu, inflater);
 	}
-
-	private void checkEmploymentIsDone(){
-		if(isEmploymentDone()){
-			btStartTask.setEnabled(false);
-			btEndTask.setEnabled(false);
-		}
-	}
 	
 	private void fillUpEndButtonEnabling(){
+        if(!canEditTasks()){
+            disableButtons();
+            return;
+        }
 		btEndTask.setEnabled(false);
 		for(int i=1; i < tasks.size(); i++){
 			Task task = tasks.get(i);
@@ -597,6 +593,10 @@ public class TasksFragment extends Fragment implements BaseDialogListener {
 	}
 	
 	private void removeAdditionalTasks() {
+		if((employment != null && employment.isFromMobile()) || isAllTasksAdditional()) {
+			return;
+		}
+
 		for(Task task : tasks)
 			if(task.getIsAdditionalTask())
 				try {
@@ -696,6 +696,16 @@ public class TasksFragment extends Fragment implements BaseDialogListener {
 //		endTask.setState(eTaskState.Done);
 		endTask.setState(eTaskState.Empty);
 	}
+
+	private boolean isAllTasksAdditional() {
+		for (Task task : tasks) {
+			if (task.isFirstTask() || task.isLastTask())
+				continue;
+			if (!task.getIsAdditionalTask())
+				return false;
+		}
+		return true;
+	}
 	
 	public void clearTasks() {
 		checkAllTasks(eTaskState.Empty, DateUtils.EmptyDate);
@@ -762,8 +772,8 @@ public class TasksFragment extends Fragment implements BaseDialogListener {
 				SynchronizationActivity.class);
 		startActivity(synchActivity);
 	}
-	
-	private void startPatientsActivity() {
+
+    protected void startPatientsActivity() {
 		Intent patientsActivity = new Intent(activity.getApplicationContext(), PatientsActivity.class);
 		startActivity(patientsActivity);
 	}
@@ -794,17 +804,29 @@ public class TasksFragment extends Fragment implements BaseDialogListener {
 	protected boolean isEmploymentDone(){
 		return employment.isDone();
 	}
+
 	private boolean isAllDone(){
 		  return (!startTask.getRealDate().equals(DateUtils.EmptyDate) 
 		    && !endTask.getRealDate().equals(DateUtils.EmptyDate) && isEmploymentDone())
 		    || (DateUtils.getTodayDateOnly().getTime() < DateUtils.getDateOnly(pilotTour.getPlanDate()).getTime());
 	}
-	private void checkAllIsDone(){
-		if(isAllDone()){
-			btStartTask.setEnabled(false);
-			btEndTask.setEnabled(false);
+
+	private boolean canEditTasks(){
+        return !employment.isFromMobile() ||
+                DateUtils.getDateOnly(pilotTour.getPlanDate()).getTime()
+                        >= DateUtils.getDateOnly(DateUtils.getSynchronizedTime()).getTime();
+    }
+
+	private void changeButtonsState(){
+		if(isAllDone() || isEmploymentDone() || !canEditTasks()){
+			disableButtons();
 		}
 	}
+
+	private void disableButtons(){
+        btStartTask.setEnabled(false);
+        btEndTask.setEnabled(false);
+    }
 	
 	private boolean isAnyDone(){
 		List<Task> tasksExceptFirstAndLast = new ArrayList<Task>(tasks);
