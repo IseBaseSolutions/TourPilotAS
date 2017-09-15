@@ -132,18 +132,11 @@ public class TasksAssessementsActivity extends BaseTimeSyncActivity implements B
 				return false;
 			tasksFragment.showUndoneDialog();
 			return true;
-		case R.id.removeManualTasks:
-			if(tasksFragment.employment.getIsDone())
-				return false;
-			int employmentID = (int)Option.Instance().getEmploymentID();
-			HelperFactory.getHelper().getEmploymentDAO().delete(employmentID);
-			HelperFactory.getHelper().getTaskDAO().deleteByEmploymentID(employmentID);
-			HelperFactory.getHelper().getUserRemarkDAO().delete(employmentID);
-			if (tasksFragment.activity.hasQuestions)
-				tasksFragment.clearAnswers();
-			tasksFragment.clearEmployment();
-			tasksFragment.startPatientsActivity();
-			return true;
+        case R.id.removeManualTasks:
+            if(tasksFragment.isEmploymentDone())
+                    return false;
+            tasksFragment.showRemoveManualTasksDialog();
+                return true;
 		case R.id.notes:
 			tasksFragment.startUserRemarksActivity(tasksFragment.SIMPLE_MODE, tasksFragment.ACTIVITY_USERREMARKS_CODE);
 			return true;
@@ -273,6 +266,9 @@ public class TasksAssessementsActivity extends BaseTimeSyncActivity implements B
 		else if (dialog.getTag().equals("dialogUndone")) {
 			tasksFragment.undoneTasks();
 		}
+        else if(dialog.getTag().equals("removeManualTasksDialog")) {
+            tasksFragment.removeManualTasks();
+        }
 		else if (dialog.getTag().equals("dialogCheckLeavingState")) {
 			tasksFragment.startVerification();
 		}

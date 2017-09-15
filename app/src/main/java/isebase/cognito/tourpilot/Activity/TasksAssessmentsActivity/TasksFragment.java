@@ -550,6 +550,11 @@ public class TasksFragment extends Fragment implements BaseDialogListener {
 				return false;
 			showUndoneDialog();
 			return true;
+        case R.id.removeManualTasks:
+            if(isEmploymentDone())
+                return false;
+            showRemoveManualTasksDialog();
+            return true;
 		case R.id.notes:
 			startUserRemarksActivity(SIMPLE_MODE, ACTIVITY_USERREMARKS_CODE);
 			return true;
@@ -613,6 +618,9 @@ public class TasksFragment extends Fragment implements BaseDialogListener {
 		}
 		else if (dialog.getTag().equals("dialogUndone")) {
 		}
+		else if(dialog.getTag().equals("removeManualTasksDialog")) {
+
+        }
 		else if (dialog.getTag().equals("dialogCheckLeavingState")) {
 			
 		}
@@ -795,6 +803,24 @@ public class TasksFragment extends Fragment implements BaseDialogListener {
 		dialog.show(getFragmentManager(), "dialogUndone");
 		getFragmentManager().executePendingTransactions();
 	}
+
+    protected void showRemoveManualTasksDialog() {
+        BaseDialog dialog = new BaseDialog(getString(R.string.attention),
+                getString(R.string.dialog_task_remove_manual));
+        dialog.show(getFragmentManager(), "removeManualTasksDialog");
+        getFragmentManager().executePendingTransactions();
+    }
+
+    protected void removeManualTasks() {
+        int employmentID = (int)Option.Instance().getEmploymentID();
+        HelperFactory.getHelper().getEmploymentDAO().delete(employmentID);
+        HelperFactory.getHelper().getTaskDAO().deleteByEmploymentID(employmentID);
+        HelperFactory.getHelper().getUserRemarkDAO().delete(employmentID);
+        if (activity.hasQuestions)
+            clearAnswers();
+        clearEmployment();
+        startPatientsActivity();
+    }
 	
 	public boolean isClickable(){
 		return !startTask.getRealDate().equals(DateUtils.EmptyDate) 

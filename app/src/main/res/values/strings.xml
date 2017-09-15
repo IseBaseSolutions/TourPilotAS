@@ -138,6 +138,7 @@
 
     <!-- Dialogs -->
     <string name="dialog_task_proof_undone">Möchten Sie diesen Einsatz als ausgefallen markieren?</string>
+    <string name="dialog_task_remove_manual">Möchten Sie den Einsatz wirklich löschen?</string>
     <string name="dialog_task_proof_back">Möchten Sie wirklich die Zeiten verwerfen? Wenn Sie diese Meldung mit OK bestätigen, werden die Zeiten und jeweilige zusätzliche Leistungen gelöscht.</string>
     <string name="dialog_no_connection">Bitte, die Internet Verbindung zulassen</string>
     <string name="dialog_complete_all_tasks">Es fehlen noch Daten, die Sie für diese Tour noch nicht eingegeben haben. Bitte nehmen Sie die Eingabe jetzt vor.</string>
