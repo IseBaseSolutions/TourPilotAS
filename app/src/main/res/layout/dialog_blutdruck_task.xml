@@ -8,15 +8,14 @@
         android:orientation="horizontal">
 
         <EditText
-            android:id="@+id/etMinValue"
+            android:id="@+id/etMaxValue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true">
             <requestFocus />
         </EditText>
-
         <EditText
-            android:id="@+id/etMaxValue"
+            android:id="@+id/etMinValue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true">
