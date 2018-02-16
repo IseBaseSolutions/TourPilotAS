@@ -1,5 +1,6 @@
 package isebase.cognito.tourpilot.Connection;
 
+import isebase.cognito.tourpilot.Data.PatientAdditionalAddress.PatientAdditionalAddress;
 import isebase.cognito.tourpilot.R;
 import isebase.cognito.tourpilot.Data.AdditionalTask.AdditionalTask;
 import isebase.cognito.tourpilot.Data.AdditionalWork.AdditionalWork;
@@ -71,6 +72,7 @@ public class ServerCommandParser {
 	public static final char WAY_POINT = 'C';
 	public static final char RELATED_QUESTION_SETTING = '?';
 	public static final char TOUR_ONCOMING_INFO = '+';
+	public static final char PATIENT_ADDITIONAL_ADDRESS = '|';
 
 	private SynchronizationHandler syncHandler;
 
@@ -260,6 +262,15 @@ public class ServerCommandParser {
 			} else
 				addToDeleteList(RecievedObjectSaver.Instance().tourOncomingInfoToDelete, getIDFromStr(commandLine));
 			break;
+		case PATIENT_ADDITIONAL_ADDRESS:
+			if(commandActionType == NEED_TO_ADD){
+				PatientAdditionalAddress additionalAddress = new PatientAdditionalAddress(commandLine);
+				RecievedObjectSaver.Instance().patientsAdditionalAddressToSave.add(additionalAddress);
+				syncHandler.onProgressUpdate(additionalAddress.getName() + " OK");
+			}else{
+				addToDeleteList(RecievedObjectSaver.Instance().patientsAdditionalAddressToDelete, getIDFromStr(commandLine));
+			}
+				break;
 		default:
 			break;
 		}

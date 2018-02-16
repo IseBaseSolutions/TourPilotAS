@@ -12,6 +12,51 @@
     </item>
     <item
         is-multidex="false"
+        jar="C:\Users\Admin\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\22.2.0\support-annotations-22.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="22.0.1"
+        sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
+        <dex dex="D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\build\intermediates\pre-dexed\debug\support-annotations-22.2.0_66f5a8eb38ce5b6a0781a4f961c25e7a46fe5711.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\libs\ormlite-core-4.48.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="22.0.1"
+        sha1="e579bd2905d0399af5029aaaf9817d5fa0ca88a5">
+        <dex dex="D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\build\intermediates\pre-dexed\debug\ormlite-core-4.48_9f4eb150faa16bdd691c9b255e92c8035e3dcb82.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\libs\ormlite-android-4.48.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="afa06f539a4026c10b247386312aa67404b80a16">
+        <dex dex="D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\build\intermediates\pre-dexed\debug\ormlite-android-4.48_59c70d83b4d51210f8231e621b346c5a9b126be4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="22.0.1"
+        sha1="73753982da6bde518f3a4c6b372749981d14d1a0">
+        <dex dex="D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-22.2.0_918a498b3767be3a4b70be39d32e3f91c9a3276c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="22.0.1"
+        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
+        <dex dex="D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-22.2.0_914ded14bb29568aceed95ff69a78b1fd542754d.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\libs\ormlite-core-4.48.jar"
         jumboMode="false"
         optimize="true"
@@ -24,9 +69,27 @@
         jar="D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\libs\ormlite-android-4.48.jar"
         jumboMode="false"
         optimize="true"
-        revision="25.0.2"
+        revision="22.0.1"
         sha1="afa06f539a4026c10b247386312aa67404b80a16">
         <dex dex="D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\build\intermediates\pre-dexed\debug\ormlite-android-4.48_59c70d83b4d51210f8231e621b346c5a9b126be4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\libs\com.google.guava_1.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="22.0.1"
+        sha1="92ae3566438bd0095feca55bf4a914d8cb162855">
+        <dex dex="D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\build\intermediates\pre-dexed\debug\com.google.guava_1.6.0_6ac207b73bc0d322d2c589400bce910a10f702fc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\jars\libs\internal_impl-22.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="22.0.1"
+        sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
+        <dex dex="D:\ANDROID\AndroidStudioProjects\TourPilotAS\app\build\intermediates\pre-dexed\debug\internal_impl-22.2.0_20e696a73de937494cb2dc8684e0b87cc7dd0a19.jar" />
     </item>
 
 </items>

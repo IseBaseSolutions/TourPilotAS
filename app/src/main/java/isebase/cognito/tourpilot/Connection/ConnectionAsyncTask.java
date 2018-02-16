@@ -417,6 +417,8 @@ public class ConnectionAsyncTask extends AsyncTask<Void, Boolean, Void> {
 //			strMsg += CFreeTopics.Instance().forServer();
 //		if (strNeedSend.length() > 15 && strNeedSend.charAt(15) == '1')
 //			strMsg += CFreeQuestions.Instance().forServer();
+		if (strNeedSend.length() > 17 && strNeedSend.charAt(18) == '1')
+			strMsg += HelperFactory.getHelper().getPatientAdditionalAddressDAO().forServer();
 		if (strNeedSend.length() > 16 && strNeedSend.charAt(17) == '1')
 			strMsg += HelperFactory.getHelper().getTourOncomingInfoDAO().forServer();
 		if (strNeedSend.length() > 16 && strNeedSend.charAt(16) == '1')

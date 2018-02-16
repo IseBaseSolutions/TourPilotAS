@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="isebase.cognito.tourpilot"
     android:versionCode="5"
-    android:versionName="1100" >
+    android:versionName="1101" >
 
     <!--
          If the user does not need to activate the physical buttons
@@ -152,6 +152,8 @@
         <activity
             android:name=".Activity.TourOncomingInfoActivity"
             android:screenOrientation="portrait" />
+        <activity android:name=".Activity.AdditionalAddressActivity"
+            android:screenOrientation="portrait"/>
 
     </application>
 

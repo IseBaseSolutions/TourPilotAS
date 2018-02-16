@@ -10,6 +10,7 @@ import isebase.cognito.tourpilot.Data.Doctor.Doctor;
 import isebase.cognito.tourpilot.Data.Information.Information;
 import isebase.cognito.tourpilot.Data.Link.Link;
 import isebase.cognito.tourpilot.Data.Patient.Patient;
+import isebase.cognito.tourpilot.Data.PatientAdditionalAddress.PatientAdditionalAddress;
 import isebase.cognito.tourpilot.Data.PatientRemark.PatientRemark;
 import isebase.cognito.tourpilot.Data.Question.Question;
 import isebase.cognito.tourpilot.Data.QuestionSetting.QuestionSetting;
@@ -47,7 +48,8 @@ public class RecievedObjectSaver {
 	public List<QuestionSetting> questionSettingsToSave = new ArrayList<QuestionSetting>();	
 	public List<CustomRemark> customRemarksToSave = new ArrayList<CustomRemark>();
 	public List<RelatedQuestionSetting> relatedQuestionSettingsToSave = new ArrayList<RelatedQuestionSetting>();	
-	public List<TourOncomingInfo> tourOncomingInfoToSave = new ArrayList<TourOncomingInfo>();	
+	public List<TourOncomingInfo> tourOncomingInfoToSave = new ArrayList<TourOncomingInfo>();
+	public List<PatientAdditionalAddress> patientsAdditionalAddressToSave = new ArrayList<PatientAdditionalAddress>();
 	
 	public List<Integer> workersToDelete = new ArrayList<Integer>();
 	public List<Integer> userRemarksToDelete = new ArrayList<Integer>();
@@ -68,7 +70,8 @@ public class RecievedObjectSaver {
 	public List<Integer> questionSettingsToDelete = new ArrayList<Integer>();	
 	public List<Integer> customRemarksToDelete = new ArrayList<Integer>();
 	public List<Integer> relatedQuestionSettingsToDelete = new ArrayList<Integer>();
-	public List<Integer> tourOncomingInfoToDelete = new ArrayList<Integer>();	
+	public List<Integer> tourOncomingInfoToDelete = new ArrayList<Integer>();
+	public List<Integer> patientsAdditionalAddressToDelete = new ArrayList<Integer>();
 
 //	public static final char FREE_TOPIC = '<';
 //	public static final char FREE_QUESTION = '>';
@@ -128,6 +131,10 @@ public class RecievedObjectSaver {
 		if (tourOncomingInfoToSave.size() > 0)
 			HelperFactory.getHelper().getTourOncomingInfoDAO().save(tourOncomingInfoToSave);
 
+		if (patientsAdditionalAddressToSave.size() > 0)
+			HelperFactory.getHelper().getPatientAdditionalAddressDAO().save(patientsAdditionalAddressToSave);
+
+
 		if (workersToDelete.size() > 0)
 			HelperFactory.getHelper().getWorkerDAO().deleteByIds(workersToDelete);
 		if (userRemarksToDelete.size() > 0)
@@ -168,6 +175,8 @@ public class RecievedObjectSaver {
 			HelperFactory.getHelper().getRelatedQuestionSettingDAO().deleteByIds(relatedQuestionSettingsToDelete);
 		if (tourOncomingInfoToDelete.size() > 0)
 			HelperFactory.getHelper().getTourOncomingInfoDAO().deleteByIds(tourOncomingInfoToDelete);
+		if (patientsAdditionalAddressToDelete.size() > 0)
+			HelperFactory.getHelper().getPatientAdditionalAddressDAO().deleteByIds(patientsAdditionalAddressToDelete);
 		clear();
 	}
 	
@@ -231,6 +240,9 @@ public class RecievedObjectSaver {
 		
 		if (tourOncomingInfoToSave.size() > 0)
 			tourOncomingInfoToSave.clear();
+
+		if (patientsAdditionalAddressToSave.size() > 0)
+			patientsAdditionalAddressToSave.clear();
 		
 		if (workersToDelete.size() > 0)
 			workersToDelete.clear();
@@ -291,6 +303,9 @@ public class RecievedObjectSaver {
 		
 		if (tourOncomingInfoToDelete.size() > 0)
 			tourOncomingInfoToDelete.clear();
+
+		if (patientsAdditionalAddressToDelete.size() > 0)
+			patientsAdditionalAddressToDelete.clear();
 		
 	}
 	

@@ -1,6 +1,5 @@
 package isebase.cognito.tourpilot.Activity.TasksAssessmentsActivity;
 
-import isebase.cognito.tourpilot.Data.BaseObject.BaseObject;
 import isebase.cognito.tourpilot.R;
 import isebase.cognito.tourpilot.Activity.TourOncomingInfoActivity;
 import isebase.cognito.tourpilot.Activity.BaseActivities.BaseTimeSyncActivity;
@@ -84,6 +83,7 @@ public class TasksAssessementsActivity extends BaseTimeSyncActivity implements B
 		MenuItem commentsMenu = menu.findItem(R.id.comments);
 		MenuItem diagnoseMenu = menu.findItem(R.id.diagnose);
 		MenuItem addresseMenu = menu.findItem(R.id.address);
+		MenuItem additionalAddresseMenu = menu.findItem(R.id.additional_address);
 		MenuItem doctorsMenu = menu.findItem(R.id.doctors);
 		MenuItem relativesMenu = menu.findItem(R.id.relatives);
 		MenuItem notesMenu = menu.findItem(R.id.notes);
@@ -112,9 +112,15 @@ public class TasksAssessementsActivity extends BaseTimeSyncActivity implements B
 			catalogsMenu.setVisible(false);
 			diagnoseMenu.setVisible(false);
 			addresseMenu.setVisible(false);
+			additionalAddresseMenu.setVisible(false);
 			doctorsMenu.setVisible(false);
 			relativesMenu.setVisible(false);
 		}
+
+		if (!HelperFactory.getHelper().getPatientAdditionalAddressDAO().isAdditionalAddressesAssigned(tasksFragment.employment.getPatientID())) {
+			additionalAddresseMenu.setVisible(false);
+		}
+
 		workersInfo.setVisible(tasksFragment.workersInfo != null);
 		return true;
 	}
@@ -151,6 +157,9 @@ public class TasksAssessementsActivity extends BaseTimeSyncActivity implements B
 			return true;
 		case R.id.address:
 			tasksFragment.startAddressActivity();
+			return true;
+		case R.id.additional_address:
+			tasksFragment.startAdditionalAddressActivity();
 			return true;
 		case R.id.doctors:
 			tasksFragment.startDoctorsActivity();

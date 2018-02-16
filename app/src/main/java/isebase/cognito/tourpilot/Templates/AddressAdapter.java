@@ -151,13 +151,13 @@ public class AddressAdapter<T extends IAddressable> extends ArrayAdapter<T> {
 
 		TextView tvFullname;
 		
-		ImageButton imageCallPhone;
+		/*ImageButton imageCallPhone;
 		ImageButton imageCallPrivatePhone;
 		ImageButton imageCallMobilePhone;
 
 		TextView tvPhone;
 		TextView tvPrivatePhone;
-		TextView tvMobilePhone;
+		TextView tvMobilePhone;*/
 		
 		TextView tvAddressName;
 		TextView tvBirthDate;

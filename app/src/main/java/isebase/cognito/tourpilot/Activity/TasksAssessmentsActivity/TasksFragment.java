@@ -1,5 +1,7 @@
 package isebase.cognito.tourpilot.Activity.TasksAssessmentsActivity;
 
+import isebase.cognito.tourpilot.Activity.AdditionalAddressActivity;
+import isebase.cognito.tourpilot.Data.PatientAdditionalAddress.PatientAdditionalAddress;
 import isebase.cognito.tourpilot.R;
 import isebase.cognito.tourpilot.Activity.AddressPatientActivity;
 import isebase.cognito.tourpilot.Activity.DoctorsActivity;
@@ -567,6 +569,9 @@ public class TasksFragment extends Fragment implements BaseDialogListener {
 		case R.id.address:
 			startAddressActivity();
 			return true;
+		case R.id.additional_address:
+			startAdditionalAddressActivity();
+			return true;
 		case R.id.doctors:
 			startDoctorsActivity();
 			return true;
@@ -657,7 +662,7 @@ public class TasksFragment extends Fragment implements BaseDialogListener {
 		if (strInfos.equals(""))
 			return;
 		HelperFactory.getHelper().getInformationDAO().save(infos);
-		InfoBaseDialog dialog = new InfoBaseDialog(getString(R.string.menu_info), strInfos);
+		InfoBaseDialog dialog = new InfoBaseDialog(getString(R.string.menu_patient_info), strInfos);
 		dialog.show(getFragmentManager(), "");
 	}
 
@@ -762,6 +767,11 @@ public class TasksFragment extends Fragment implements BaseDialogListener {
 	
 	protected void startAddressActivity() {
 		Intent addressActivity = new Intent(activity.getApplicationContext(), AddressPatientActivity.class);
+		startActivity(addressActivity);
+	}
+
+	protected void startAdditionalAddressActivity() {
+		Intent addressActivity = new Intent(activity.getApplicationContext(), AdditionalAddressActivity.class);
 		startActivity(addressActivity);
 	}
 	

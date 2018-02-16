@@ -11,8 +11,10 @@ import com.j256.ormlite.field.DataType;
 import com.j256.ormlite.field.DatabaseField;
 import com.j256.ormlite.table.DatabaseTable;
 
-@DatabaseTable(tableName = "Patients")
+@DatabaseTable(tableName = Patient.TABLE_NAME)
 public class Patient extends BaseObject implements IAddressable {
+
+	public static final String TABLE_NAME = "Patients";
 
 	public static final String IS_ADDITIONAL_FIELD = "is_additional";
 	public static final String SURNAME_FIELD = "surname";
@@ -21,6 +23,8 @@ public class Patient extends BaseObject implements IAddressable {
 	public static final String SEX_FIELD = "sex";
 	public static final String DOCTORS_ID_FIELD = "doctor_ids";
 	public static final String RELATIVES_ID_FIELD = "relative_ids";
+
+	public static final String ADDITIONAL_ADDRESS_ID_FIELD = "additional_address_ids";
 	
 	public static final String CATALOG_KK_TYPE_FIELD = "catalog_kk_type";
 	public static final String CATALOG_PK_TYPE_FIELD = "catalog_pk_type";
@@ -95,7 +99,6 @@ public class Patient extends BaseObject implements IAddressable {
 		return isAdditional;
 	}
 
-
 	public void setIsAdditional(boolean isAdditional) {
 		this.isAdditional = isAdditional;
 	}
@@ -154,6 +157,17 @@ public class Patient extends BaseObject implements IAddressable {
 		this.birthdate = birthdate;
 	}
 
+	@DatabaseField(dataType = DataType.STRING, columnName = ADDITIONAL_ADDRESS_ID_FIELD)
+	private String additionalAddressIDs;
+
+	public String getAdditionalAddressIDs(){
+		return additionalAddressIDs;
+	}
+
+	public void setAdditionalAddressIDs(String additionalAddressIDs){
+		this.additionalAddressIDs = additionalAddressIDs;
+	}
+
 	public boolean isAdditionalWork(){
 		return getId() > ADDITIONAL_WORK_CODE;
 	}
@@ -184,6 +198,7 @@ public class Patient extends BaseObject implements IAddressable {
 		setCheckSum(Long.parseLong(resultArray[13]));
 		setServerTime(resultArray[14].equals("1"));
 		setWasSent(resultArray[15].equals("1"));
+		setAdditionalAddressIDs(resultArray[16]);
 	}
 	
 	public Patient(String initString) {
@@ -214,7 +229,10 @@ public class Patient extends BaseObject implements IAddressable {
 		setPR(parseInt(parsingString.next(";")));
 				
 		setStrDoctorsIDs(parsingString.next(";"));
-		setStrRelativeIDs(parsingString.next("~"));
+		setStrRelativeIDs(parsingString.next(";"));
+
+		setAdditionalAddressIDs(parsingString.next("~"));
+
 		setCheckSum(ncryptor.NcodeToL(parsingString.next()));
 	}
 
@@ -269,10 +287,15 @@ public class Patient extends BaseObject implements IAddressable {
 		setSA(EMPTY_ID);
 		setPR(EMPTY_ID);
 		setBirthdate("");
+		setAdditionalAddressIDs("");
 	}
 
 	@Override
 	public Address getAddress() {
 		return address;
+	}
+
+	public Boolean isAdditionalAddressAssigned(){
+		return additionalAddressIDs != "";
 	}
 }

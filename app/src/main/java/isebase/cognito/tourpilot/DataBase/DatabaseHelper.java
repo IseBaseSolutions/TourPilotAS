@@ -34,6 +34,8 @@ import isebase.cognito.tourpilot.Data.Option.Option;
 import isebase.cognito.tourpilot.Data.Option.OptionDAO;
 import isebase.cognito.tourpilot.Data.Patient.Patient;
 import isebase.cognito.tourpilot.Data.Patient.PatientDAO;
+import isebase.cognito.tourpilot.Data.PatientAdditionalAddress.PatientAdditionalAddress;
+import isebase.cognito.tourpilot.Data.PatientAdditionalAddress.PatientAdditionalAddressDAO;
 import isebase.cognito.tourpilot.Data.PatientRemark.PatientRemark;
 import isebase.cognito.tourpilot.Data.PatientRemark.PatientRemarkDAO;
 import isebase.cognito.tourpilot.Data.PilotTour.PilotTour;
@@ -85,7 +87,7 @@ public class DatabaseHelper extends OrmLiteSqliteOpenHelper {
 
 	// � ������ ����������� ������, ��� ���������� � ���������� �� � ����������
 	// ������� ����� �������� ����� onUpgrade();
-	private static final int DATABASE_VERSION = 31;
+	private static final int DATABASE_VERSION = 32;
 
 	// ������ �� DAO �������������� ���������, �������� � ��
 	// private GoalDAO goalDao = null;
@@ -119,6 +121,7 @@ public class DatabaseHelper extends OrmLiteSqliteOpenHelper {
 	private WorkerDAO workerDao = null;
 	private RelatedQuestionSettingDAO relatedQuestionSettingDao = null;
 	private TourOncomingInfoDAO tourOncomingInfoDAO = null;
+	private PatientAdditionalAddressDAO patientAdditionalAddressDao = null;
 	
 	public DatabaseHelper(Context context) {
 		super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -134,14 +137,22 @@ public class DatabaseHelper extends OrmLiteSqliteOpenHelper {
 			int newVer) {
 //		clearAllData();
 		addColumnIfNotExist(db, "Options", "is_skipping_pflege_ok", "SMALLINT");
-		addColumnIfNotExist(db, "Patients", "birth_date", "VARCHAR");				
+		addColumnIfNotExist(db, Patient.TABLE_NAME, "birth_date", "VARCHAR");
 		addColumnIfNotExist(db, "Workers", "is_sending_info_allowed", "SMALLINT");
 		addColumnIfNotExist(db, "Works", "worker_id", "LONG");
 		addColumnIfNotExist(db, "Options", "phone_number", "VARCHAR");
+		addColumnIfNotExist(db, Patient.TABLE_NAME, Patient.ADDITIONAL_ADDRESS_ID_FIELD, "VARCHAR");
 		
 		try {								
-			if(!tableExist(db, "TourOncomingInfo"))
+			if(!tableExist(db, TourOncomingInfo.TABLE_NAME))
 				TableUtils.createTable(connectionSource, TourOncomingInfo.class);
+		} catch(Exception ex) {
+			ex.printStackTrace();
+		}
+
+		try {
+			if(!tableExist(db, PatientAdditionalAddress.TABLE_NAME))
+				TableUtils.createTable(connectionSource, PatientAdditionalAddress.class);
 		} catch(Exception ex) {
 			ex.printStackTrace();
 		}
@@ -221,6 +232,7 @@ public class DatabaseHelper extends OrmLiteSqliteOpenHelper {
 			TableUtils.createTable(connectionSource, WayPoint.class);
 			TableUtils.createTable(connectionSource, RelatedQuestionSetting.class);
 			TableUtils.createTable(connectionSource, TourOncomingInfo.class);
+			TableUtils.createTable(connectionSource, PatientAdditionalAddress.class);
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
@@ -258,6 +270,7 @@ public class DatabaseHelper extends OrmLiteSqliteOpenHelper {
 			TableUtils.dropTable(connectionSource, Work.class, true);
 			TableUtils.dropTable(connectionSource, RelatedQuestionSetting.class, true);
 			TableUtils.dropTable(connectionSource, TourOncomingInfo.class, true);
+			TableUtils.dropTable(connectionSource, PatientAdditionalAddress.class, true);
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
@@ -569,6 +582,15 @@ public class DatabaseHelper extends OrmLiteSqliteOpenHelper {
 		return null;
 	}
 
+	public PatientAdditionalAddressDAO getPatientAdditionalAddressDAO() {
+		try {
+			return patientAdditionalAddressDao == null ? patientAdditionalAddressDao = new PatientAdditionalAddressDAO(getConnectionSource(), PatientAdditionalAddress.class) : patientAdditionalAddressDao;
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
+
 	// ����������� ��� �������� ����������
 	@Override
 	public void close() {
@@ -601,6 +623,8 @@ public class DatabaseHelper extends OrmLiteSqliteOpenHelper {
 		workDao = null;
 		workerDao = null;
 		relatedQuestionSettingDao = null;
+		tourOncomingInfoDAO = null;
+		patientAdditionalAddressDao = null;
 	}
 
 }

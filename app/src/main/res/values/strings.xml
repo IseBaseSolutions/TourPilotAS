@@ -7,6 +7,9 @@
     <string name="menu_catalogs">Zusätzliche Leistungen</string>
     <string name="menu_notes">Besuchsvermerke</string>
     <string name="menu_info">Info</string>
+    <string name="menu_patient_info">Aktuelle Informationen</string>
+    <string name="menu_additional_address">Sonstige Adressen</string>
+    <string name="menu_additional_address_short">Sonst. Adressen</string>
     <string name="menu_actual_workers">MA, zus. Info</string>
     <string name="menu_gps">Gps</string>
     <string name="menu_extra_assessments">Zusätzliche Assessments</string>
@@ -101,6 +104,8 @@
     <string name="phone">Mobil. (dstl.):</string>
     <string name="phone_private">Telefon (priv.):</string>
     <string name="phone_mobile">Mobiltelefon:</string>
+    <string name="fax">Fax:</string>
+    <string name="email">Email:</string>
 
     <!-- Defaults -->
     <string name="def_empty_time">00:00</string>

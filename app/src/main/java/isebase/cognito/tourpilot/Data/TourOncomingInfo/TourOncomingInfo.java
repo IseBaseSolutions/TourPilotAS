@@ -17,13 +17,14 @@ import com.j256.ormlite.field.DataType;
 import com.j256.ormlite.field.DatabaseField;
 import com.j256.ormlite.table.DatabaseTable;
 
-@DatabaseTable(tableName = "TourOncomingInfo")
+@DatabaseTable(tableName = TourOncomingInfo.TABLE_NAME)
 public class TourOncomingInfo extends BaseObject {
 
 	public static final String OWNER_ID_FIELD = "owner_id";
 	public static final String INFO_TYPE = "info_type";
 	public static final String HEADER_INFO = "header_info";
 	public static final String WORKERS_INFO = "workers_info";
+	public static final String TABLE_NAME = "TourOncomingInfo";
 
 	@DatabaseField(dataType = DataType.INTEGER, columnName = OWNER_ID_FIELD)
 	private int ownerID;

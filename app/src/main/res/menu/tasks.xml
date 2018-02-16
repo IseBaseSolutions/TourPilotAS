@@ -7,45 +7,10 @@
         app:showAsAction="always">
         <menu>
             <item
-                android:id="@+id/address"
-                android:title="@string/menu_address"
-                android:menuCategory="secondary"
-                android:orderInCategory="6"/>
-            <item
-                android:id="@+id/doctors"
-                android:title="@string/menu_doctors"
-                android:menuCategory="secondary"
-                android:orderInCategory="7" />
-
-            <item
-                android:id="@+id/relatives"
-                android:title="@string/menu_relatives"
-                android:menuCategory="secondary"
-                android:orderInCategory="8" />
-
-            <item
-                android:id="@+id/diagnose"
-                android:title="@string/menu_diagnose"
-                android:menuCategory="secondary"
-                android:orderInCategory="9" />
-
-            <item
-                android:id="@+id/cancelAllTasks"
-                android:title="@string/menu_undone_all_tasks"
-                android:menuCategory="secondary"
-                android:orderInCategory="10" />
-            <item
-                android:id="@+id/removeManualTasks"
-                android:title="@string/menu_remove_manual_tasks"
-                android:menuCategory="secondary"
-                android:orderInCategory="11" />
-
-            <item
-                android:id="@+id/catalogs"
-                android:title="@string/menu_catalogs"
+                android:id="@+id/info"
+                android:title="@string/menu_patient_info"
                 android:menuCategory="container"
-                android:orderInCategory="1"/>
-
+                android:orderInCategory="1" />
             <item
                 android:id="@+id/notes"
                 android:title="@string/menu_notes"
@@ -53,34 +18,73 @@
                 android:orderInCategory="2"/>
 
             <item
-                android:id="@+id/info"
-                android:title="@string/menu_info"
-                android:menuCategory="container"
-                android:orderInCategory="3" />
-
-            <item
-                android:id="@+id/extraAssessments"
-                android:title="@string/menu_extra_assessments"
-                android:menuCategory="container"
-                android:orderInCategory="4" />
-
-            <item
-                android:id="@+id/manualInput"
-                android:title="@string/menu_manual_input"
-                android:menuCategory="container"
-                android:orderInCategory="5" />
-
-            <item
                 android:id="@+id/comments"
                 android:title="@string/menu_comments"
                 android:menuCategory="container"
-                android:orderInCategory="6"/>
+                android:orderInCategory="3"/>
 
             <item
                 android:id="@+id/tasks_workers_info"
                 android:title="@string/menu_workers_patient_info"
                 android:menuCategory="container"
-                android:orderInCategory="7"/>
+                android:orderInCategory="4"/>
+
+            <item
+                android:id="@+id/address"
+                android:title="@string/menu_address"
+                android:menuCategory="container"
+                android:orderInCategory="5"/>
+            <item
+                android:id="@+id/additional_address"
+                android:title="@string/menu_additional_address"
+                android:menuCategory="container"
+                android:orderInCategory="6"/>
+            <item
+                android:id="@+id/doctors"
+                android:title="@string/menu_doctors"
+                android:menuCategory="container"
+                android:orderInCategory="7" />
+
+            <item
+                android:id="@+id/relatives"
+                android:title="@string/menu_relatives"
+                android:menuCategory="container"
+                android:orderInCategory="8" />
+
+            <item
+                android:id="@+id/diagnose"
+                android:title="@string/menu_diagnose"
+                android:menuCategory="container"
+                android:orderInCategory="9" />
+
+            <item
+                android:id="@+id/catalogs"
+                android:title="@string/menu_catalogs"
+                android:menuCategory="container"
+                android:orderInCategory="10"/>
+
+            <item
+                android:id="@+id/extraAssessments"
+                android:title="@string/menu_extra_assessments"
+                android:menuCategory="container"
+                android:orderInCategory="11" />
+
+            <item
+                android:id="@+id/manualInput"
+                android:title="@string/menu_manual_input"
+                android:menuCategory="container"
+                android:orderInCategory="12" />
+
+            <item
+                android:id="@+id/cancelAllTasks"
+                android:title="@string/menu_undone_all_tasks"
+                android:menuCategory="container"
+                android:orderInCategory="13" />
+            <item
+                android:id="@+id/removeManualTasks"
+                android:title="@string/menu_remove_manual_tasks"
+                android:menuCategory="container"
+                android:orderInCategory="14" />
         </menu>
     </item>
 </menu>
