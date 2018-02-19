@@ -305,6 +305,7 @@ public class DatabaseHelper extends OrmLiteSqliteOpenHelper {
 			TableUtils.clearTable(connectionSource, AnsweredCategory.class);
 			TableUtils.clearTable(connectionSource, ExtraCategory.class);
 			TableUtils.clearTable(connectionSource, TourOncomingInfo.class);
+			TableUtils.clearTable(connectionSource, PatientAdditionalAddress.class);
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
