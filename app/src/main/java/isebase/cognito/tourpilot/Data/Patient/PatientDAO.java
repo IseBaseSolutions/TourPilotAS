@@ -120,7 +120,7 @@ public class PatientDAO extends BaseObjectDAO<Patient> {
 		strSelect += "t1." + Patient.ID_FIELD + ", ";
 		strSelect += "t1." + Patient.CHECK_SUM_FIELD + ", ";
 		strSelect += "t1." + Patient.IS_SERVER_TIME_FIELD + ", ";
-		strSelect += "t1." + Patient.WAS_SENT_FIELD;
+		strSelect += "t1." + Patient.WAS_SENT_FIELD + ", ";
 		strSelect += "t1." + Patient.ADDITIONAL_ADDRESS_ID_FIELD;
 		return strSelect;
 	}
