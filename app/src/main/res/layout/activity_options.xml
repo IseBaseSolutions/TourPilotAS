@@ -72,7 +72,7 @@
 		        android:layout_height="wrap_content"
 		        android:layout_below="@+id/tvPhoneNumber"
 		        android:inputType="phone" />
-		    
+
    		    <ProgressBar
 		        android:id="@+id/pbClearDB"
 		        style="?android:attr/progressBarStyleLarge"

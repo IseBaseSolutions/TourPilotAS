@@ -15,6 +15,8 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.DialogInterface;
+import android.content.res.ColorStateList;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.DialogFragment;
 import android.view.Gravity;
@@ -105,11 +107,13 @@ public class BradenDialog extends DialogFragment{
 		layouts.add(ll3);
 		tvOther1 = new TextView(StaticResources.getBaseContext());
 		tvOther1.setText(StaticResources.getBaseContext().getString(R.string.oder));
+		tvOther1.setTextColor(Color.BLACK);
 		tvOther2 = new TextView(StaticResources.getBaseContext());
 		tvOther2.setText(StaticResources.getBaseContext().getString(R.string.oder));
+		tvOther2.setTextColor(Color.BLACK);
 		checkBoxes = new ArrayList<CheckBox>();
 		for (int i = 0; i < 7; i++)
-			checkBoxes.add(new CheckBox(StaticResources.getBaseContext()));
+			checkBoxes.add((new CheckBox(StaticResources.getBaseContext())));
 	}
 	
 	private void fillUp() {
@@ -179,7 +183,23 @@ public class BradenDialog extends DialogFragment{
 			checkBoxes.get(totalCount).setText(subQuestions.get(answerName).get(totalCount));
 			checkBoxes.get(totalCount).setGravity(Gravity.FILL);
 			checkBoxes.get(totalCount).setOnCheckedChangeListener(chbListener);
-			checkBoxes.get(totalCount).setTextColor(tvOther1.getHintTextColors().getDefaultColor());
+			checkBoxes.get(totalCount).setTextColor(Color.BLACK);
+			checkBoxes.get(totalCount).setHintTextColor(Color.BLACK);
+
+			ColorStateList colorStateList = new ColorStateList(
+					new int[][]{
+							new int[]{-android.R.attr.state_checked}, // unchecked
+							new int[]{android.R.attr.state_checked} , // checked
+					},
+					new int[] {
+
+							Color.BLACK //disabled
+							,Color.GREEN //enabled
+
+					}
+			);
+			checkBoxes.get(totalCount).setButtonTintList(colorStateList);
+
 			if (answer != null && ((RelativeLayout)linearLayout.getParent()).getChildAt(answer.getBradenLevel()).equals(linearLayout) && answerNumber == answer.getBradenAnswer())
 				for (int j = 0; j < answer.getBradenCheckedIndexes().length; j++)
 					if (i == answer.getBradenCheckedIndexes()[j])
