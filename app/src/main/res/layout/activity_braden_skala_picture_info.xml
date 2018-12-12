@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     tools:context=".BradenSkalaPictureInfoActivity" >
 	
-	<isebase.cognito.tourpilot.Views.BradenSkalaView
+	<isebase.cognito.tourpilot_apk.Views.BradenSkalaView
 		android:id="@+id/bsView"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"/>

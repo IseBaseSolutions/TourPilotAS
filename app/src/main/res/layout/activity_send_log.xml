@@ -6,7 +6,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="isebase.cognito.tourpilot.Activity.SendLogActivity" >
+    tools:context="isebase.cognito.tourpilot_apk.Activity.SendLogActivity" >
 
     <TextView
         android:id="@+id/tvText"

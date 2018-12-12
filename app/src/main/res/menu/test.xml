@@ -1,7 +1,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="isebase.cognito.tourpilot.TestActivity">
+    tools:context="isebase.cognito.tourpilot_apk.TestActivity">
     <item
         android:id="@+id/empty"
         android:icon="@drawable/ic_dots_vertical"

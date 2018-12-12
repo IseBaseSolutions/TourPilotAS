@@ -1,16 +1,17 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto" >
     <item
+        android:id="@+id/action_show_program_info"
+        android:orderInCategory="101"
+        android:title="@string/menu_program_info"
+        app:showAsAction="always" />
+    <item
         android:id="@+id/empty"
         android:icon="@drawable/ic_dots_vertical"
-        android:orderInCategory="101"
+        android:orderInCategory="102"
         app:showAsAction="always"
         >
         <menu>
-            <item
-                android:id="@+id/action_show_program_info"
-                android:title="@string/menu_program_info"
-                app:showAsAction="never"/>
             <item
                 android:id="@+id/action_db_backup"
                 android:title="@string/menu_db_backup"

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="isebase.cognito.tourpilot"
+    package="isebase.cognito.tourpilot_apk"
     android:versionCode="6"
-    android:versionName="1104" >
+    android:versionName="1109" >
 
     <!--
          If the user does not need to activate the physical buttons
