@@ -42,6 +42,7 @@ import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.support.v4.app.DialogFragment;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -84,11 +85,9 @@ public class PatientsActivity extends BaseActivity implements
 			reloadData();
 			initControls();
 			fillUpTitle();
+			showTourInfos(false);
 			fillUp();
 			initDialogs();
-			showTourInfos(false);
-
-
 		} catch (Exception e) {
 			e.printStackTrace();
 			criticalPatientsClose();
@@ -211,21 +210,27 @@ public class PatientsActivity extends BaseActivity implements
 					int position, long arg3) {
 				if (jobs.get(position) instanceof Employment) {
 					Employment employment = (Employment) jobs.get(position);
+
 					saveSelectedEmploymentID(employment.getId());
+//					if((!isRead) &&(dialog != null))
+//						isRead = dialog.isRead();
+
 					if (worker.isUseGPS() && !employment.isDone()) {
 						if (isGPSEnabled())
 							showStartNavigationDialog();
 						else
 							showGPSEnablingDialog();
-					} else
-					   isRead = dialog.isRead;
+					} else {
+
 						startTasksActivity();
+					}
 				} else {
 					initSelectedPatientsDialog();
 					showPatientsDialog(position);
 				}
 			}
 		});
+
 	}
 
 	private void reloadData() {
@@ -316,6 +321,7 @@ public class PatientsActivity extends BaseActivity implements
 									}
 
 								});
+
 				return adb.create();
 			}
 		};
@@ -334,6 +340,7 @@ public class PatientsActivity extends BaseActivity implements
 			patientsArr = new String[] { getString(R.string.no_any_patient) };
 		selectedPatientsDialog.show(getSupportFragmentManager(),
 				"patientsDialog");
+
 	}
 
 	private void startAdditionalPatientsActivity(int mode) {
@@ -360,9 +367,10 @@ public class PatientsActivity extends BaseActivity implements
 		infos = HelperFactory.getHelper().getInformationDAO()
 				.load(Information.EMPLOYMENT_ID_FIELD, BaseObject.EMPTY_ID);
 		String strInfos = InformationDAO.getInfoStr(infos,
-				pilotTour.getPlanDate(), isFromMenu);
+                pilotTour.getPlanDate(), isFromMenu);
 		if (strInfos.equals(""))
 			return;
+
 		dialog = new InfoInDialog(
 				getString(R.string.menu_info), strInfos);
         dialog.setCancelable(false);

@@ -368,6 +368,7 @@ public class ConnectionAsyncTask extends AsyncTask<Void, Boolean, Void> {
 		strDone += HelperFactory.getHelper().getWorkDAO().getDone();
 		strDone += HelperFactory.getHelper().getAnswerDAO().getDone();
 		strDone += HelperFactory.getHelper().getUserRemarkDAO().getDone();
+        strDone += HelperFactory.getHelper().getInformationDAO().getDone();
 		strDone += HelperFactory.getHelper().getEmploymentVerificationDAO().getDone();
 		if (checkWp)
 			strDone += HelperFactory.getHelper().getWayPointDAO().getDone();

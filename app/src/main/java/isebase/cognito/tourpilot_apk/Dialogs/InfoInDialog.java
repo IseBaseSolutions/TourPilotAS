@@ -11,7 +11,7 @@ public class InfoInDialog extends DialogFragment implements OnClickListener {
 
     private String title;
     private String messageText;
-    public boolean isRead;
+    private boolean isRead;
 
     public InfoInDialog(){}
 

@@ -87,7 +87,7 @@ public class DatabaseHelper extends OrmLiteSqliteOpenHelper {
 
 	// � ������ ����������� ������, ��� ���������� � ���������� �� � ����������
 	// ������� ����� �������� ����� onUpgrade();
-	private static final int DATABASE_VERSION = 32;
+	private static final int DATABASE_VERSION = 33;
 
 	// ������ �� DAO �������������� ���������, �������� � ��
 	// private GoalDAO goalDao = null;

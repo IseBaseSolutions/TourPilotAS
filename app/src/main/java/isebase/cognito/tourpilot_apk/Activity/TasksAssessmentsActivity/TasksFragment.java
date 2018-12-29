@@ -664,6 +664,7 @@ public class TasksFragment extends Fragment implements BaseDialogListener {
 		HelperFactory.getHelper().getInformationDAO().save(infos);
 		InfoBaseDialog dialog = new InfoBaseDialog(getString(R.string.menu_patient_info), strInfos);
 		dialog.show(getFragmentManager(), "");
+		dialog.setCancelable(false);
 	}
 
 	protected void showComments(){

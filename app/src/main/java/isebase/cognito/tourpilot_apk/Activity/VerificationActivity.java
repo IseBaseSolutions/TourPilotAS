@@ -1,5 +1,6 @@
 package isebase.cognito.tourpilot_apk.Activity;
 
+import isebase.cognito.tourpilot_apk.Data.Information.Information;
 import isebase.cognito.tourpilot_apk.R;
 import isebase.cognito.tourpilot_apk.Activity.BaseActivities.BaseActivity;
 import isebase.cognito.tourpilot_apk.Data.CustomRemark.CustomRemark;
@@ -37,7 +38,9 @@ public class VerificationActivity extends BaseActivity {
 	private CheckBox chbCheckVerification;	
 	
 	private Employment employment;
-	
+
+	private Information information;
+
 	private UserRemark userRemark;		
 	
 	private Date dateBegin;

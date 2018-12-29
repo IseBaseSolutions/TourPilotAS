@@ -2,6 +2,7 @@ package isebase.cognito.tourpilot_apk.Data.Information;
 
 import isebase.cognito.tourpilot_apk.Connection.ServerCommandParser;
 import isebase.cognito.tourpilot_apk.Data.BaseObject.BaseObject;
+import isebase.cognito.tourpilot_apk.Data.Option.Option;
 import isebase.cognito.tourpilot_apk.Utils.DateUtils;
 import isebase.cognito.tourpilot_apk.Utils.StringParser;
 
@@ -21,6 +22,7 @@ public class Information extends BaseObject {
 	public static final String TILL_DATE_FIELD = "till_date";
 	public static final String READ_TIME_FIELD = "read_time";
 	public static final String IS_FROM_SERVER_FIELD = "is_from_server";
+	public static final String IS_DONE = "is_done";
 
 	@DatabaseField(dataType = DataType.LONG, columnName = EMPLOYMENT_ID_FIELD)
 	private long employmentID;
@@ -88,6 +90,17 @@ public class Information extends BaseObject {
 		this.isFromServer = isFromServer;
 	}
 
+    @DatabaseField(dataType = DataType.BOOLEAN, columnName = IS_DONE)
+    private boolean isDone;
+
+    public boolean getIsDone() {
+        return isDone;
+    }
+
+    public void setIsDone(boolean isDone) {
+        this.isDone = isDone;
+    }
+
 	public Information() {
 		clear();
 	}
@@ -115,7 +128,8 @@ public class Information extends BaseObject {
 		String strValue = new String(ServerCommandParser.INFORMATION + ";");
 		strValue += String.format("%d;%d", getId(), getEmploymentID()) + ";";
 		strValue += getCheckSum();
-		return strValue;
+
+        return strValue;
 	}
 
 	@Override
@@ -134,4 +148,16 @@ public class Information extends BaseObject {
 				&& date.getTime() <= getTillDate().getTime();
 	}
 
+    public String getDone() {
+	    if(getIsDone())
+	        return "";
+
+        String strValue = new String(ServerCommandParser.INFORMATION + ";");
+        strValue +=  getInformationID() + ";";
+        strValue +=  Option.Instance().getWorkerID() + ";";
+        strValue += DateUtils.DateFormat.format(getReadTime()) + " ";
+        strValue += DateUtils.HourMinutesSecondsFormat.format(getReadTime()) + ";";
+        strValue += getCheckSum() + ";";
+        return strValue;
+    }
 }

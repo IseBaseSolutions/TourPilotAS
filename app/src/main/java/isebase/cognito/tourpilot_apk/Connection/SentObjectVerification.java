@@ -3,6 +3,7 @@ package isebase.cognito.tourpilot_apk.Connection;
 import isebase.cognito.tourpilot_apk.Data.Answer.Answer;
 import isebase.cognito.tourpilot_apk.Data.Employment.Employment;
 import isebase.cognito.tourpilot_apk.Data.EmploymentVerification.EmploymentVerification;
+import isebase.cognito.tourpilot_apk.Data.Information.Information;
 import isebase.cognito.tourpilot_apk.Data.Task.Task;
 import isebase.cognito.tourpilot_apk.Data.UserRemark.UserRemark;
 import isebase.cognito.tourpilot_apk.Data.WayPoint.WayPoint;
@@ -23,7 +24,7 @@ public class SentObjectVerification {
 	public List<EmploymentVerification> sentEmploymentVerifications = new ArrayList<EmploymentVerification>();
 	public List<WayPoint> sentWayPoints = new ArrayList<WayPoint>();
 	public List<Answer> sentAnswers = new ArrayList<Answer>();
-	
+
 	public static SentObjectVerification Instance() {
 		return instance == null ? instance = new SentObjectVerification() : instance;
 	}
@@ -48,5 +49,4 @@ public class SentObjectVerification {
 		sentWayPoints.clear();
 		sentAnswers.clear();
 	}
-
 }

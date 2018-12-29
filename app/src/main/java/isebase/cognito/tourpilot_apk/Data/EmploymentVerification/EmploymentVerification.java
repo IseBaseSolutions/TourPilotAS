@@ -86,7 +86,7 @@ public class EmploymentVerification extends BaseObject {
 	public void setDateEnd(Date dateEnd) {
 		this.dateEnd = dateEnd;
 	}
-	
+
 	@DatabaseField(dataType = DataType.STRING, columnName = DONE_TASKS_ID_FIELD)
 	private String doneTasksIDs;
 	

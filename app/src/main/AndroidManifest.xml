@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="isebase.cognito.tourpilot_apk"
     android:versionCode="6"
-    android:versionName="1109" >
+    android:versionName="1110" >
 
     <!--
          If the user does not need to activate the physical buttons

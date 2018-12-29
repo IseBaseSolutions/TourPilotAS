@@ -218,7 +218,7 @@ public class Employment extends BaseObject implements IJob {
             strTask += task.getPlanDate().toString().substring(11,13); // time hours
             strTask += task.getPlanDate().toString().substring(14,16) + ";"; // time minutes
             strTask += task.getLeistungs() + ";";
-            strTask += (task.getState().equals(eTaskState.Done) ? "ja" : "nein"); 
+            strTask += (task.getState().equals(eTaskState.Done) ? "ja" : "nein");
             String qulityResult = task.getQualityResult().equals("") ? "" : "$" + task.getQualityResult();
             strTask += qulityResult;
             strTask += ";";
@@ -269,7 +269,7 @@ public class Employment extends BaseObject implements IJob {
 		HelperFactory.getHelper().getAnsweredCategoryDAO().deleteByEmploymentID(getId());
 		HelperFactory.getHelper().getExtraCategoryDAO().deleteByEmploymentID(getId());
 		HelperFactory.getHelper().getQuestionSettingDAO().deleteByEmploymentID(getId());
-		HelperFactory.getHelper().getInformationDAO().deleteByEmploymentID(getId());
+		//HelperFactory.getHelper().getInformationDAO().deleteByEmploymentID(getId());
     }
 
 	@Override
