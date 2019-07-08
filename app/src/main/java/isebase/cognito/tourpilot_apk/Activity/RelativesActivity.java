@@ -18,9 +18,8 @@ public class RelativesActivity extends BaseActivity {
 	
 	private List<Relative> relatives;
 	private Employment employment;
-	private AddressAdapter<Relative> adapter;
-	
-	@Override
+
+    @Override
 	protected void onCreate(Bundle savedInstanceState) {
 		try{
 			super.onCreate(savedInstanceState);
@@ -46,15 +45,16 @@ public class RelativesActivity extends BaseActivity {
 	}
 	
 	private void fillUp() {
-		adapter = new AddressAdapter<Relative>(this
-				, R.layout.row_address_template, relatives);
+        AddressAdapter<Relative> adapter = new AddressAdapter<Relative>(this
+                , R.layout.row_address_template, relatives);
 		ListView relativesListView = (ListView) findViewById(R.id.lvListRelatives);
 		relativesListView.setAdapter(adapter);
 	}
 	
 	private void reloadData() {	
 		employment = HelperFactory.getHelper().getEmploymentDAO().loadAll((int)Option.Instance().getEmploymentID());
-		relatives =  HelperFactory.getHelper().getRelativeDAO().sortByStrIDs(HelperFactory.getHelper().getRelativeDAO().loadAllByIDs(employment.getPatient().getStrRelativeIDs()), employment.getPatient().getStrRelativeIDs());
+		relatives =  HelperFactory.getHelper().getRelativeDAO().sortByStrIDs(HelperFactory.getHelper().getRelativeDAO()
+                .loadAllByIDs(employment.getPatient().getStrRelativeIDs()), employment.getPatient().getStrRelativeIDs());
 	}
 
 }

@@ -148,6 +148,11 @@ public class Information extends BaseObject {
 				&& date.getTime() <= getTillDate().getTime();
 	}
 
+	public boolean isActualDate(Date date) {
+		return date.getTime() >= getFromDate().getTime()
+				&& date.getTime() <= getTillDate().getTime();
+	}
+
     public String getDone() {
 	    if(getIsDone())
 	        return "";
@@ -157,7 +162,6 @@ public class Information extends BaseObject {
         strValue +=  Option.Instance().getWorkerID() + ";";
         strValue += DateUtils.DateFormat.format(getReadTime()) + " ";
         strValue += DateUtils.HourMinutesSecondsFormat.format(getReadTime()) + ";";
-        strValue += getCheckSum() + ";";
         return strValue;
     }
 }

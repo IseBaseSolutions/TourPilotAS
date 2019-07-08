@@ -26,8 +26,7 @@ import android.widget.TextView;
 
 public class UserRemarksActivity extends BaseActivity {
 
-	private Employment newEmployment;
-	private UserRemark userRemark;	
+    private UserRemark userRemark;
 	private List<CustomRemark> customRemarks;
 	
 	private LinearLayout llCustomRemarks;
@@ -64,7 +63,7 @@ public class UserRemarksActivity extends BaseActivity {
 	}
 
 	private void reloadData() {
-		newEmployment = HelperFactory.getHelper().getEmploymentDAO().load((int)Option.Instance().getEmploymentID());
+        Employment newEmployment = HelperFactory.getHelper().getEmploymentDAO().load((int) Option.Instance().getEmploymentID());
 
 		customRemarks = HelperFactory.getHelper().getCustomRemarkDAO().load();
 		userRemark = HelperFactory.getHelper().getUserRemarkDAO().load((int)Option.Instance().getEmploymentID());

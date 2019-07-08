@@ -200,7 +200,9 @@ public class BradenDialog extends DialogFragment{
 			);
 			checkBoxes.get(totalCount).setButtonTintList(colorStateList);
 
-			if (answer != null && ((RelativeLayout)linearLayout.getParent()).getChildAt(answer.getBradenLevel()).equals(linearLayout) && answerNumber == answer.getBradenAnswer())
+			if (answer != null && ((RelativeLayout)linearLayout.getParent())
+                    .getChildAt(answer.getBradenLevel()).equals(linearLayout)
+                    && answerNumber == answer.getBradenAnswer())
 				for (int j = 0; j < answer.getBradenCheckedIndexes().length; j++)
 					if (i == answer.getBradenCheckedIndexes()[j])
 						checkBoxes.get(totalCount).setChecked(true);
@@ -219,7 +221,9 @@ public class BradenDialog extends DialogFragment{
 			if (!isChecked)
 				return;
 			currentLayout = (LinearLayout) buttonView.getParent();
-			clearAnotherLevelCheckBoxes(currentLayout != null ? currentLayout : answer.getBradenLevel() == 0 ? ll1 : answer.getBradenLevel() == 1 ? ll2 : ll3);			
+			clearAnotherLevelCheckBoxes(currentLayout != null ? currentLayout : answer.getBradenLevel() == 0 ?
+                    ll1 :
+                    answer.getBradenLevel() == 1 ? ll2 : ll3);
 		}		
 	}
 	

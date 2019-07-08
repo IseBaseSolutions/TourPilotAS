@@ -118,7 +118,7 @@ public class AddressAdapter<T extends IAddressable> extends ArrayAdapter<T> {
 		
 		tvPhone.setText(strPhoneNumber);
 		tvPhone.setTextSize(TypedValue.COMPLEX_UNIT_DIP,textSizeMiddle);
-		tvPhone.setTypeface(Typeface.MONOSPACE, Typeface.BOLD | Typeface.ITALIC);
+		tvPhone.setTypeface(Typeface.MONOSPACE, Typeface.BOLD_ITALIC);
 		tvPhone.setGravity(Gravity.RIGHT | Gravity.CENTER_HORIZONTAL | Gravity.FILL);
 		tvPhone.setLayoutParams(new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
 
@@ -174,7 +174,6 @@ public class AddressAdapter<T extends IAddressable> extends ArrayAdapter<T> {
 				dialIntent.setData(Uri.parse("tel:" + realPhone));
 				getContext().startActivity(dialIntent);
 			}else {
-
 				Intent callIntent = new Intent(Intent.ACTION_CALL);
 				callIntent.setData(Uri.parse("tel:" + realPhone));
 				getContext().startActivity(callIntent);

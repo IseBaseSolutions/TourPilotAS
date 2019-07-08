@@ -43,9 +43,8 @@ import android.widget.TextView;
 	private ListView lvConnectionLog;
 	private ProgressBar progressBar;
 	private TextView progressText;
- 	private SynchronizationHandler syncHandler;
- 	
- 	/** Override **/
+
+     /** Override **/
 
  	@Override
  	protected void onCreate(Bundle savedInstanceState) {
@@ -53,60 +52,54 @@ import android.widget.TextView;
 
  		setContentView(R.layout.activity_synchronization);
  		initControls();
- 		initAdapter();
- 		syncHandler = new SynchronizationHandler() {
- 			
- 			@Override
-			public void onSynchronizedFinished(boolean isOK, String text) {
-				if(!text.equals("")){
-					adapter.insert(DateUtils.DateHourMinutesFormat.format(new Date()) + " " + text, 0);	
-					if(!isOK){
-						progressText.setText(text);
-					}
-				}
-				if (isInterrupted()) {
-					showInterruptDialog();
-				}
-				else if (isLicenseOver()) {
-					showLicenseOverDialog();
-				}
-				else if (isNewVersionAvailable())
- 				{
-					showNewVersionAvilableDialog();
-					return;
- 				}
-				else if ((!connectionStatus.lastExecuteOK) && isPilotTourPresent())
-				{
-					startPatientsActivity();
-				}
-				else if(isOK) {
-					if(isWorkerPresent()) {
-						HelperFactory.getHelper().getEmploymentDAO().createEmployments();
-						clearOldInfo();
-					}
-					switchToNextActivity();					
-				}
- 			}
- 			
- 			@Override
- 			public void onItemSynchronized(String text) {
-				adapter.insert(DateUtils.DateHourMinutesFormat.format(DateUtils.GetServerDateTime()) + " " + text, 0);	
-				connectionStatus.nextState();
-				connectionTask = new ConnectionAsyncTask(connectionStatus);
-				connectionTask.execute(); 
- 			}
- 			
- 			@Override
- 			public void onProgressUpdate(String text, int progress){
- 				progressBar.setProgress(progress);
- 				progressText.setText(text);
- 			}
+        initAdapter();
+        SynchronizationHandler syncHandler = new SynchronizationHandler() {
 
-			@Override
-			public void onProgressUpdate(String text) {
-				progressBar.setMax(connectionStatus.getTotalProgress());				
-			}				
- 		};	
+            @Override
+            public void onSynchronizedFinished(boolean isOK, String text) {
+                if (!text.equals("")) {
+                    adapter.insert(DateUtils.DateHourMinutesFormat.format(new Date()) + " " + text, 0);
+                    if (!isOK) {
+                        progressText.setText(text);
+                    }
+                }
+                if (isInterrupted()) {
+                    showInterruptDialog();
+                } else if (isLicenseOver()) {
+                    showLicenseOverDialog();
+                } else if (isNewVersionAvailable()) {
+                    showNewVersionAvilableDialog();
+                    return;
+                } else if ((!connectionStatus.lastExecuteOK) && isPilotTourPresent()) {
+                    startPatientsActivity();
+                } else if (isOK) {
+                    if (isWorkerPresent()) {
+                        HelperFactory.getHelper().getEmploymentDAO().createEmployments();
+                        clearOldInfo();
+                    }
+                    switchToNextActivity();
+                }
+            }
+
+            @Override
+            public void onItemSynchronized(String text) {
+                adapter.insert(DateUtils.DateHourMinutesFormat.format(DateUtils.GetServerDateTime()) + " " + text, 0);
+                connectionStatus.nextState();
+                connectionTask = new ConnectionAsyncTask(connectionStatus);
+                connectionTask.execute();
+            }
+
+            @Override
+            public void onProgressUpdate(String text, int progress) {
+                progressBar.setProgress(progress);
+                progressText.setText(text);
+            }
+
+            @Override
+            public void onProgressUpdate(String text) {
+                progressBar.setMax(connectionStatus.getTotalProgress());
+            }
+        };
 	
 		connectionStatus = new ConnectionStatus(syncHandler);
 		connectionTask = new ConnectionAsyncTask(connectionStatus);
@@ -131,26 +124,29 @@ import android.widget.TextView;
  	}
 
 	@Override
-	public void onDialogPositiveClick(DialogFragment dialog) {
-		if (dialog.getTag().equals("newVersionDialog"))
-		{
-			AutoUpdate autoUpdate = new AutoUpdate();
-			autoUpdate.execute();	
-		}
-		else if (dialog.getTag().equals("licenseOverDialog"))
-		{
-			finish();
-		}
-		else if (dialog.getTag().equals("interruptDialog"))
-		{
-			switchToNextActivity();
-		}
-		else if (dialog.getTag().equals("closeDialog"))
-		{
-			close();
-		}
-		
-	}
+    public void onDialogPositiveClick(DialogFragment dialog) {
+        switch (dialog.getTag()) {
+            case "newVersionDialog": {
+                AutoUpdate autoUpdate = new AutoUpdate(SynchronizationActivity.this);
+                autoUpdate.execute();
+                break;
+            }
+            case "licenseOverDialog": {
+                finish();
+                break;
+            }
+            case "interruptDialog": {
+                switchToNextActivity();
+                break;
+            }
+            case "closeDialog": {
+                close();
+                break;
+            }
+            default:
+                break;
+        }
+    }
 
 	@Override
 	public void onDialogNegativeClick(DialogFragment dialog) {
@@ -249,6 +245,7 @@ import android.widget.TextView;
 	
 	private boolean isMyServiceRunning(Class<?> serviceClass) {
 	    ActivityManager manager = (ActivityManager) getSystemService(Context.ACTIVITY_SERVICE);
+	    if(manager != null)
 	    for (RunningServiceInfo service : manager.getRunningServices(Integer.MAX_VALUE)) {
 	        if (serviceClass.getName().equals(service.service.getClassName())) {
 	            return true;
@@ -256,11 +253,10 @@ import android.widget.TextView;
 	    }
 	    return false;
 	}
-	
-	private boolean isCurrentAcivity() {
-		ActivityManager am = (ActivityManager)getBaseContext().getSystemService(Context.ACTIVITY_SERVICE);
-		ComponentName cn = am.getRunningTasks(1).get(0).topActivity;
-		return cn.getClassName().equals(SynchronizationActivity.class.getName());
-	}
-	
+
+     private boolean isCurrentAcivity() {
+         ActivityManager am = (ActivityManager) getBaseContext().getSystemService(Context.ACTIVITY_SERVICE);
+         ComponentName cn = am.getRunningTasks(1).get(0).topActivity;
+         return cn.getClassName().equals(SynchronizationActivity.class.getName());
+     }
 }

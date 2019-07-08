@@ -19,9 +19,7 @@ public class TourOncomingInfoActivity extends BaseActivity {
 
 	private int id;
 	private TourOncomingInfo info;
-	private ExpandableListView expListView;
-	private TourOncomingInfoAdapter expListAdapter;
-	private WorkerPhoneNumbersDialog workerPhoneNumbersDialog;
+    private WorkerPhoneNumbersDialog workerPhoneNumbersDialog;
 	 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -56,8 +54,8 @@ public class TourOncomingInfoActivity extends BaseActivity {
 	}
 	
     private void fillUpList() {
-        expListView = (ExpandableListView) findViewById(R.id.elvTourOncomingInfo);
-        expListAdapter = new TourOncomingInfoAdapter(this, info.getDayPartsInfo());
+        ExpandableListView expListView = (ExpandableListView) findViewById(R.id.elvTourOncomingInfo);
+        TourOncomingInfoAdapter expListAdapter = new TourOncomingInfoAdapter(this, info.getDayPartsInfo());
         expListView.setAdapter(expListAdapter);
         if (info.getInfoType() == 0 || info.getInfoType() == 1)
         	expListView.expandGroup(0);

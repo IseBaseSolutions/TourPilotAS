@@ -120,8 +120,9 @@ public class ConnectionAsyncTask extends AsyncTask<Void, Boolean, Void> {
 			conStatus.socket = new Socket(Option.Instance().getServerIP(),
 					Option.Instance().getServerPort());
 
-			conStatus.OS = conStatus.socket.getOutputStream();
-			conStatus.IS = conStatus.socket.getInputStream();
+                conStatus.OS = conStatus.socket.getOutputStream();
+                conStatus.IS = conStatus.socket.getInputStream();
+
 
 		} catch (Exception ex) {
 			ex.printStackTrace();
@@ -338,9 +339,14 @@ public class ConnectionAsyncTask extends AsyncTask<Void, Boolean, Void> {
 
 	private void writeToStream(OutputStream os, String text) {
 		try {
-			text = "[DEFLATER]" + text;
-			os.write(text.getBytes());
-			os.flush();
+		    if(text != null)                                            //
+		        text = "[DEFLATER]" + text;
+
+			if(os != null){
+                os.write(text.getBytes());
+                os.flush();
+            }
+
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

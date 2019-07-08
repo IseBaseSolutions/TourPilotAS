@@ -156,14 +156,20 @@ public class EmploymentVerification extends BaseObject {
 		strValue += employmentID + ";";
 		strValue += workerID + ";";
 		strValue += patientID + ";";
-		EmploymentInterval empl = HelperFactory.getHelper().getEmploymentIntervalDAO().load((int)employmentID);
-		strValue += DateUtils.DateFormat.format(empl.getStartTime()) + " " + DateUtils.HourMinutesFormat.format(empl.getStartTime()) + ";";
-		strValue += DateUtils.DateFormat.format(empl.getStopTime()) + " " + DateUtils.HourMinutesFormat.format(empl.getStopTime()) + ";";
+		EmploymentInterval empl = HelperFactory.getHelper().getEmploymentIntervalDAO()
+                .load((int)employmentID);
+		strValue += DateUtils.DateFormat.format(empl.getStartTime()) + " " +
+                DateUtils.HourMinutesFormat.format(empl.getStartTime()) + ";";
+		strValue += DateUtils.DateFormat.format(empl.getStopTime()) + " " +
+                DateUtils.HourMinutesFormat.format(empl.getStopTime()) + ";";
 		strValue += doneTasksIDs + ";";
 		strValue += undoneTasksIDs + ";";
 		strValue += userRemarksMarks + ";";
 		strValue += isPflege + ";";
-		strValue += (employmentID + "" + Option.Instance().getWorkerID() + "" + Option.Instance().getPilotTourID() + "" + patientID +""+ DateUtils.HourMinutesSecondsFormat.format(empl.getStartTime()) +""+ DateUtils.HourMinutesSecondsFormat.format(empl.getStopTime()));
+		strValue += (employmentID + "" + Option.Instance().getWorkerID() + "" +
+                Option.Instance().getPilotTourID() + "" + patientID +""+
+                DateUtils.HourMinutesSecondsFormat.format(empl.getStartTime()) +
+                ""+ DateUtils.HourMinutesSecondsFormat.format(empl.getStopTime()));
 		SentObjectVerification.Instance().sentEmploymentVerifications.add(this);
 		return strValue;
 	}

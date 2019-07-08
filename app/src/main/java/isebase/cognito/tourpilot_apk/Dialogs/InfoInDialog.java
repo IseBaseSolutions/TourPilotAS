@@ -7,6 +7,8 @@ import android.content.DialogInterface.OnClickListener;
 import android.os.Bundle;
 import android.support.v4.app.DialogFragment;
 
+import isebase.cognito.tourpilot_apk.R;
+
 public class InfoInDialog extends DialogFragment implements OnClickListener {
 
     private String title;
@@ -24,10 +26,16 @@ public class InfoInDialog extends DialogFragment implements OnClickListener {
     public Dialog onCreateDialog(Bundle savedInstanceState) {
         AlertDialog.Builder adb = new AlertDialog.Builder(getActivity())
                 .setTitle(title)
-                .setNegativeButton(isebase.cognito.tourpilot_apk.R.string.close, new OnClickListener() {
+                .setNegativeButton(R.string.ok, new OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        isRead = true;
+                    }
+                })
+                .setPositiveButton(isebase.cognito.tourpilot_apk.R.string.cancel, new OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        isRead = true;
+                        dialog.dismiss();
                     }
                 })
                 .setMessage(messageText);

@@ -131,7 +131,8 @@ public class SendLogActivity extends Activity implements OnClickListener {
 	public void btRestartApplicationClick(View v) {
 		Intent i = getBaseContext().getPackageManager()
 	             .getLaunchIntentForPackage( getBaseContext().getPackageName() );
-		i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+		if(i != null)
+		    i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 		startActivity(i);
 	}
 	

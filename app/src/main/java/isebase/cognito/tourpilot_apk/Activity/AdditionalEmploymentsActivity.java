@@ -21,7 +21,10 @@ import isebase.cognito.tourpilot_apk.Utils.StringParser;
 import java.util.ArrayList;
 import java.util.List;
 
+import android.content.Context;
 import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.support.v4.app.DialogFragment;
 import android.text.Editable;
@@ -41,7 +44,9 @@ public class AdditionalEmploymentsActivity extends BaseActivity implements BaseD
 	private SynchronizationHandler syncHandler;
 	private ConnectionStatus connectionStatus;
 	private ConnectionAsyncTask connectionTask;
-		
+
+    BaseInfoDialog noConectionDialog;
+
 	ListView listView;
 	
 	List<AdditionalEmployment> addEmployments = new ArrayList<AdditionalEmployment>();
@@ -200,15 +205,22 @@ public class AdditionalEmploymentsActivity extends BaseActivity implements BaseD
 	}
 	
 	public void btOkClick(View view) {
-		if (additionalEmploymentsMode == eAdditionalPatientsMode.getAP)
-		{			
-			createAdditionalEmployment();
-			startCatalogsActivity();
-			return;
-		}
-		pbSync.setVisibility(View.VISIBLE);
-		btOK.setEnabled(false);
-		sendExecuteRequest();
+        ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo ni = cm.getActiveNetworkInfo();
+        if (ni != null) {
+            if (additionalEmploymentsMode == eAdditionalPatientsMode.getAP)
+            {
+                createAdditionalEmployment();
+                startCatalogsActivity();
+                return;
+            }
+            pbSync.setVisibility(View.VISIBLE);
+            btOK.setEnabled(false);
+            sendExecuteRequest();
+            return;
+        }
+        noConectionDialog = new BaseInfoDialog(getString(R.string.attention), getString(R.string.dialog_no_connection_synchronize));
+        noConectionDialog.show(getSupportFragmentManager(), "noConectionDialog");
 	}
 	
 	private String getPatientsStr() {

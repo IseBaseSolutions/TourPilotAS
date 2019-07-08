@@ -94,8 +94,10 @@ public class BaseTimeSyncActivity extends AppCompatActivity {
 						connectionStatus.CurrentState = 6;
 					else
 						connectionStatus.nextState();
-					connectionTask = new ConnectionAsyncTask(connectionStatus);
-					connectionTask.execute();
+					if(connectionStatus.CurrentState != 0) {
+                        connectionTask = new ConnectionAsyncTask(connectionStatus);
+                        connectionTask.execute();
+                    }
 				}
 
 				@Override

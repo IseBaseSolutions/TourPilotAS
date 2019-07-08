@@ -1,12 +1,16 @@
 package isebase.cognito.tourpilot_apk.Templates;
 
+import android.Manifest;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.graphics.Typeface;
 import android.net.Uri;
+import android.os.Build;
 import android.support.annotation.LayoutRes;
 import android.support.annotation.NonNull;
+import android.support.v4.content.ContextCompat;
 import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -23,6 +27,7 @@ import java.util.List;
 
 import isebase.cognito.tourpilot_apk.Data.PatientAdditionalAddress.PatientAdditionalAddress;
 import isebase.cognito.tourpilot_apk.R;
+import isebase.cognito.tourpilot_apk.Utils.StringParser;
 
 /**
  * Created by Kostya on 15.02.2018.
@@ -55,7 +60,7 @@ public class AdditionalAddressAdapter extends ArrayAdapter<PatientAdditionalAddr
         initTextView(addressHolder.tvArtName, row, R.id.tvArtName, addressHolder.address.getArtName());
         initTextView(addressHolder.tvAdditionalAddressName, row, R.id.tvAdditionalAddressName, addressHolder.address.getName());
         initTextView(addressHolder.tvAddressData, row, R.id.tvAddressData, addressHolder.address.getAddressData());
-        initTextView(addressHolder.tvFax, row, R.id.tvFax, addressHolder.address.getFax());
+        initTextView(addressHolder.tvFax, row, R.id.tvFax, "Fax: " + addressHolder.address.getFax());
         initTextView(addressHolder.tvEmail, row, R.id.tvEmail, addressHolder.address.getEmail());
         initTextView(addressHolder.tvAddressInfo, row, R.id.tvAddressInfo, addressHolder.address.getInfo());
 
@@ -114,7 +119,7 @@ public class AdditionalAddressAdapter extends ArrayAdapter<PatientAdditionalAddr
 
         tvPhone.setText(strPhoneNumber);
         tvPhone.setTextSize(TypedValue.COMPLEX_UNIT_DIP,textSizeMiddle);
-        tvPhone.setTypeface(Typeface.MONOSPACE, Typeface.BOLD | Typeface.ITALIC);
+        tvPhone.setTypeface(Typeface.MONOSPACE, Typeface.BOLD_ITALIC);
         tvPhone.setGravity(Gravity.RIGHT | Gravity.CENTER_HORIZONTAL | Gravity.FILL);
         tvPhone.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
 
@@ -153,14 +158,26 @@ public class AdditionalAddressAdapter extends ArrayAdapter<PatientAdditionalAddr
         TextView tvAddressInfo;
         TextView tvFax;
         TextView tvEmail;
+        TextView tvPhone;
     }
 
     public void onCallPhone(View view) {
         String realPhone = (String) view.getTag();
         try{
-            Intent callIntent = new Intent(Intent.ACTION_CALL);
-            callIntent.setData(Uri.parse("tel:" + realPhone));
-            getContext().startActivity(callIntent);
+
+            if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.M)
+            {
+                Intent dialIntent = new Intent(Intent.ACTION_DIAL);
+                dialIntent.setData(Uri.parse("tel:" + realPhone));
+                getContext().startActivity(dialIntent);
+            }else {
+                if (ContextCompat.checkSelfPermission(getContext(),
+                        Manifest.permission.READ_PHONE_STATE) == PackageManager.PERMISSION_GRANTED) {
+                    Intent callIntent = new Intent(Intent.ACTION_CALL);
+                    callIntent.setData(Uri.parse("tel:" + realPhone));
+                    getContext().startActivity(callIntent);
+                }
+            }
         }
         catch(Exception ex){
             ex.printStackTrace();

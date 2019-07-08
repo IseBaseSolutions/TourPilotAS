@@ -25,7 +25,7 @@ public class InformationDAO extends BaseObjectDAO<Information> {
 	public static String getInfoStr(List<Information> infoList, Date date, boolean isFromMenu) {
 		String strInfos = "";
 		for(Information info : infoList) {
-			if(DateUtils.isToday(info.getReadTime()) && !isFromMenu || !info.isActualInfo(date))
+			if(DateUtils.isToday(info.getReadTime()) && !info.isActualInfo(date))
                 continue;
 
 			strInfos += (strInfos.equals("") ? "" : "\n") + info.getName();
@@ -37,6 +37,18 @@ public class InformationDAO extends BaseObjectDAO<Information> {
 		HelperFactory.getHelper().getInformationDAO().save(infoList);
 		return strInfos;
 	}
+
+    public static boolean getInfoIsRead(List<Information> infoList, Date date, boolean isFromMenu) {
+        for(Information info : infoList) {
+
+            if(isFromMenu)
+                return false;
+           // else if(DateUtils.isToday(info.getReadTime()) && info.isActualInfo(date))
+            else if(info.getReadTime().getDate() == date.getDate())
+                return true;
+        }
+        return false;
+    }
 	
 	public void deleteByEmploymentID(int employmentID) {
 		DeleteBuilder<Information, Integer> deleteBuilder = deleteBuilder();

@@ -50,12 +50,12 @@ public class DoctorsActivity extends BaseActivity {
 	
 	public void reloadData() {
 		newEmployment = HelperFactory.getHelper().getEmploymentDAO().loadAll((int)Option.Instance().getEmploymentID());
-		addressable = HelperFactory.getHelper().getDoctorODA().sortByStrIDs(HelperFactory.getHelper().getDoctorODA().loadAllByIDs(newEmployment.getPatient().getStrDoctorsIDs()), newEmployment.getPatient().getStrDoctorsIDs());
+		addressable = HelperFactory.getHelper().getDoctorODA().sortByStrIDs(HelperFactory.getHelper()
+                .getDoctorODA().loadAllByIDs(newEmployment.getPatient().getStrDoctorsIDs()),
+                newEmployment.getPatient().getStrDoctorsIDs());
 	}
 
 	private void fillUpTitle(){
 		setTitle(getString(R.string.menu_doctors) + ", " + newEmployment.getName());
 	}
-	
-
 }

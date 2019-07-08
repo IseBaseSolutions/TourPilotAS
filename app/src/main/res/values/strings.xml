@@ -101,7 +101,7 @@
     <string name="street">Strasse:</string>
     <string name="zip">PLZ:</string>
     <string name="city">Ort:</string>
-    <string name="phone">Mobil. (dstl.):</string>
+    <string name="phone">Telefon:</string>
     <string name="phone_private">Telefon (priv.):</string>
     <string name="phone_mobile">Mobiltelefon:</string>
     <string name="fax">Fax:</string>
@@ -173,6 +173,7 @@
     <string name="dialog_kontraktur_point_marking">Sie haben die Lokalisation der Kontraktur nicht markiert.</string>
     <string name="dialog_related_questions">Bevor Sie die Assessments erfassen, beantworten Sie bitte die Fragen, die eine Beziehung mit anderen Fragen haben.</string>
     <string name="dialog_no_connection_sync">Internetverbindung fehlt. Kein Datenabgleich möglich.</string>
+    <string name="dialog_no_connection_synchronize">Die Internetverbindung fehlt! Versuchen Sie es bitte später!</string>
 
     <!-- Errors -->
     <string name="err_not_db_file">Wählen Sie bitte die Datei mit der Erweiterung .db</string>

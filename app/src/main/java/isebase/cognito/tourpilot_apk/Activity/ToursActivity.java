@@ -41,9 +41,7 @@ import com.google.common.base.Strings;
 public class ToursActivity extends BaseActivity implements BaseDialogListener{
 	
 	private List<PilotTour> pilotTours;
-	BaseInfoDialog noConectionDialog;
-	
-	
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		try {
@@ -115,13 +113,14 @@ public class ToursActivity extends BaseActivity implements BaseDialogListener{
 	
 	public void btStartSyncClick(View view) {
 		ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+
 		NetworkInfo ni = cm.getActiveNetworkInfo();
 		if (ni != null) {
 			startSyncActivity();
 			return;
 		}
-		noConectionDialog = new BaseInfoDialog(getString(R.string.attention), getString(R.string.dialog_no_connection_sync));
-		noConectionDialog.show(getSupportFragmentManager(), "noConectionDialog");
+        BaseInfoDialog noConnectionDialog = new BaseInfoDialog(getString(R.string.attention), getString(R.string.dialog_no_connection_sync));
+		noConnectionDialog.show(getSupportFragmentManager(), "noConnectionDialog");
 	}
 	
 	private void logoutWorker(){

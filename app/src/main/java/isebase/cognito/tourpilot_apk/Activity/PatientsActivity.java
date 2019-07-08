@@ -69,9 +69,8 @@ public class PatientsActivity extends BaseActivity implements
 	private InfoBaseDialog infoDialog;
 	private BaseDialog dialogStartNavigation;
 	private BaseDialog dialogGPSEnabling;
-	private BaseInfoDialog noConnectionDialog;
-	
-	private LocationManager locationManager;
+
+    private LocationManager locationManager;
 	private TourOncomingInfo workersInfo;
 	private TourOncomingInfo carsInfo;
 
@@ -182,13 +181,14 @@ public class PatientsActivity extends BaseActivity implements
 		Option.Instance().setPilotTourID(BaseObject.EMPTY_ID);
 		Option.Instance().save();
 		ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+
 		NetworkInfo ni = cm.getActiveNetworkInfo();
 		if (ni != null) {
 			startSyncActivity();
 			return;
 		}
-		noConnectionDialog = new BaseInfoDialog(getString(R.string.attention),
-				getString(R.string.dialog_no_connection_sync));
+        BaseInfoDialog noConnectionDialog = new BaseInfoDialog(getString(R.string.attention),
+                getString(R.string.dialog_no_connection_sync));
 		noConnectionDialog.show(getSupportFragmentManager(),
 				"noConectionDialog");
 		// startSyncActivity();
@@ -225,7 +225,7 @@ public class PatientsActivity extends BaseActivity implements
 						startTasksActivity();
 					}
 				} else {
-					initSelectedPatientsDialog();
+
 					showPatientsDialog(position);
 				}
 			}
@@ -297,34 +297,29 @@ public class PatientsActivity extends BaseActivity implements
 	}
 
 	private void initSelectedPatientsDialog() {
-		selectedPatientsDialog = new DialogFragment() {
-			@Override
-			public Dialog onCreateDialog(Bundle savedInstanceState) {
-				AlertDialog.Builder adb = new AlertDialog.Builder(getActivity())
-						.setTitle(
-								work.getName()
-										+ " "
-										+ DateUtils.HourMinutesFormat
-												.format(work.getStartTime())
-										+ " - "
-										+ DateUtils.HourMinutesFormat
-												.format(work.getStopTime()))
-						.setItems(patientsArr, null)
-						.setPositiveButton(
-								isebase.cognito.tourpilot_apk.R.string.ok,
-								new OnClickListener() {
+        AlertDialog.Builder adb = new AlertDialog.Builder(PatientsActivity.this)
+                .setTitle(
+                        work.getName()
+                                + " "
+                                + DateUtils.HourMinutesFormat
+                                .format(work.getStartTime())
+                                + " - "
+                                + DateUtils.HourMinutesFormat
+                                .format(work.getStopTime()))
+                .setItems(patientsArr, null)
+                .setPositiveButton(
+                        isebase.cognito.tourpilot_apk.R.string.ok,
+                        new OnClickListener() {
 
-									@Override
-									public void onClick(DialogInterface dialog,
-											int which) {
+                            @Override
+                            public void onClick(DialogInterface dialog,
+                                                int which) {
 
-									}
+                            }
 
-								});
+                        });
 
-				return adb.create();
-			}
-		};
+        adb.create().show();
 	}
 
 	private void showPatientsDialog(int position) {
@@ -338,9 +333,8 @@ public class PatientsActivity extends BaseActivity implements
 				patientsArr[counter++] = patient.getFullName();
 		} else
 			patientsArr = new String[] { getString(R.string.no_any_patient) };
-		selectedPatientsDialog.show(getSupportFragmentManager(),
-				"patientsDialog");
 
+        initSelectedPatientsDialog();
 	}
 
 	private void startAdditionalPatientsActivity(int mode) {
@@ -368,23 +362,24 @@ public class PatientsActivity extends BaseActivity implements
 				.load(Information.EMPLOYMENT_ID_FIELD, BaseObject.EMPTY_ID);
 		String strInfos = InformationDAO.getInfoStr(infos,
                 pilotTour.getPlanDate(), isFromMenu);
-		if (strInfos.equals(""))
+
+		boolean isReadToday = InformationDAO.getInfoIsRead(infos, pilotTour.getPlanDate(),isFromMenu);
+
+		if (isReadToday)
 			return;
 
 		dialog = new InfoInDialog(
 				getString(R.string.menu_info), strInfos);
         dialog.setCancelable(false);
 		dialog.show(getSupportFragmentManager(), "informationDialog");
-
-
 	}
 
 	@Override
 	public void onDialogPositiveClick(DialogFragment dialog) {
-		if (dialog.getTag() == "dialogStartNavigation") {
+		if (dialog.getTag().equals("dialogStartNavigation")) {
 			startTasksActivity();
 			GpsNavigator.startGpsNavigation(getPatientAdress());			
-		} else if (dialog.getTag() == "dialogGPSEnabling") {
+		} else if (dialog.getTag().equals("dialogGPSEnabling")) {
 			Intent myIntent = new Intent(
 					Settings.ACTION_LOCATION_SOURCE_SETTINGS);
 			startActivity(myIntent);
@@ -407,7 +402,7 @@ public class PatientsActivity extends BaseActivity implements
 
 	@Override
 	public void onDialogNegativeClick(DialogFragment dialog) {
-		if (dialog.getTag() == "dialogStartNavigation") {
+		if (dialog.getTag().equals("dialogStartNavigation")) {
 			startTasksActivity();
 		}
 	}
