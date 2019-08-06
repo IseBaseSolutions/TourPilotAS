@@ -29,7 +29,7 @@ public class InformationDAO extends BaseObjectDAO<Information> {
                 continue;
 
 			strInfos += (strInfos.equals("") ? "" : "\n") + info.getName();
-			info.setReadTime(DateUtils.getSynchronizedTime());
+
 			info.setServerTime(Option.Instance().isTimeSynchronised());
 		}
 		if(strInfos.equals(""))

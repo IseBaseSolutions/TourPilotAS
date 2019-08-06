@@ -1,7 +1,6 @@
 package isebase.cognito.tourpilot_apk.Activity.TasksAssessmentsActivity;
 
 import isebase.cognito.tourpilot_apk.Activity.AdditionalAddressActivity;
-import isebase.cognito.tourpilot_apk.Data.PatientAdditionalAddress.PatientAdditionalAddress;
 import isebase.cognito.tourpilot_apk.R;
 import isebase.cognito.tourpilot_apk.Activity.AddressPatientActivity;
 import isebase.cognito.tourpilot_apk.Activity.DoctorsActivity;
@@ -47,13 +46,16 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.support.v4.app.DialogFragment;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.SharedElementCallback;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -113,7 +115,9 @@ public class TasksFragment extends Fragment implements BaseDialogListener {
 	
 	private View rootView;
 	
-	TasksAssessementsActivity activity;	
+	TasksAssessementsActivity activity;
+
+	public Context context;
 
 	public Task getStartTask() {
 		return startTask;
@@ -656,15 +660,49 @@ public class TasksFragment extends Fragment implements BaseDialogListener {
 		return;
 	}
 
+	@Override
+	public void onAttach(Context context) {
+		super.onAttach(context);
+		this.context = context;
+	}
+
 	protected void showPatientInfo(boolean isFromMenu){
 		infos = HelperFactory.getHelper().getInformationDAO().load(Information.EMPLOYMENT_ID_FIELD, String.valueOf(employment.getId()));
-		String strInfos = InformationDAO.getInfoStr(infos, DateUtils.getSynchronizedTime(), isFromMenu);
+		final String strInfos = InformationDAO.getInfoStr(infos, DateUtils.getSynchronizedTime(), isFromMenu);
 		if (strInfos.equals(""))
 			return;
-		HelperFactory.getHelper().getInformationDAO().save(infos);
-		InfoBaseDialog dialog = new InfoBaseDialog(getString(R.string.menu_patient_info), strInfos);
-		dialog.show(getFragmentManager(), "");
-		dialog.setCancelable(false);
+
+		boolean isReadToday = InformationDAO.getInfoIsRead(infos, pilotTour.getPlanDate(),isFromMenu);
+
+		if (isReadToday)
+			return;
+
+		AlertDialog.Builder alert = new AlertDialog.Builder(context);
+		alert.setTitle(getString(R.string.menu_patient_info));
+		alert.setMessage(strInfos);
+		alert.setPositiveButton(R.string.ok, new
+				DialogInterface.OnClickListener()
+				{
+					public void onClick(DialogInterface dialog, int id)
+					{
+						for(Information info : infos) {
+							if(info.getName().equals(strInfos)){
+									info.setReadTime(DateUtils.getSynchronizedTime());
+									HelperFactory.getHelper().getInformationDAO().save(infos);
+								}
+						}
+					}
+				});
+		alert.setNegativeButton(isebase.cognito.tourpilot_apk.R.string.cancel, new DialogInterface.OnClickListener()
+		{
+			public void onClick(DialogInterface dialog, int id)
+			{
+				dialog.dismiss();
+			}
+		});
+		alert.setCancelable(false);
+		alert.create();
+		alert.show();
 	}
 
 	protected void showComments(){

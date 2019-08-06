@@ -74,8 +74,6 @@ public class PatientsActivity extends BaseActivity implements
 	private TourOncomingInfo workersInfo;
 	private TourOncomingInfo carsInfo;
 
-    InfoInDialog dialog;
-
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		try {
@@ -360,7 +358,7 @@ public class PatientsActivity extends BaseActivity implements
 	private void showTourInfos(boolean isFromMenu) {
 		infos = HelperFactory.getHelper().getInformationDAO()
 				.load(Information.EMPLOYMENT_ID_FIELD, BaseObject.EMPTY_ID);
-		String strInfos = InformationDAO.getInfoStr(infos,
+		final String strInfos = InformationDAO.getInfoStr(infos,
                 pilotTour.getPlanDate(), isFromMenu);
 
 		boolean isReadToday = InformationDAO.getInfoIsRead(infos, pilotTour.getPlanDate(),isFromMenu);
@@ -368,10 +366,35 @@ public class PatientsActivity extends BaseActivity implements
 		if (isReadToday)
 			return;
 
-		dialog = new InfoInDialog(
-				getString(R.string.menu_info), strInfos);
-        dialog.setCancelable(false);
-		dialog.show(getSupportFragmentManager(), "informationDialog");
+		if (strInfos.equals(""))
+			return;
+
+		AlertDialog.Builder alert = new AlertDialog.Builder(PatientsActivity.this);
+		alert.setTitle(getString(R.string.menu_patient_info));
+		alert.setMessage(strInfos);
+		alert.setPositiveButton(R.string.ok, new
+				DialogInterface.OnClickListener()
+				{
+					public void onClick(DialogInterface dialog, int id)
+					{
+						for(Information info : infos) {
+							if(info.getName().equals(strInfos)){
+								info.setReadTime(DateUtils.getSynchronizedTime());
+								HelperFactory.getHelper().getInformationDAO().save(infos);
+							}
+						}
+					}
+				});
+		alert.setNegativeButton(isebase.cognito.tourpilot_apk.R.string.cancel, new DialogInterface.OnClickListener()
+		{
+			public void onClick(DialogInterface dialog, int id)
+			{
+				dialog.dismiss();
+			}
+		});
+		alert.setCancelable(false);
+		alert.create();
+		alert.show();
 	}
 
 	@Override
