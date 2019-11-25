@@ -17,6 +17,7 @@ public class Address {
 	public static final String PHONE_FIELD = "phone";
 	public static final String PRIVATE_PHONE_FIELD = "private_phone";
 	public static final String MOBILE_PHONE_FIELD = "mobile_phone";
+	public static final String ADDITIONAL_INFO_FIELD = "additional_info";
 	
 	@DatabaseField(generatedId = true, columnName = ID_FIELD)
 	private int id;
@@ -94,7 +95,18 @@ public class Address {
 	public void setMobilePhone(String mobilePhone) {
 		this.mobilePhone = mobilePhone;
 	}
-	
+
+	@DatabaseField(dataType = DataType.STRING, columnName = ADDITIONAL_INFO_FIELD)
+	private String additionalInfo;
+
+	public String getAdditionalInfo() {
+		return additionalInfo;
+	}
+
+	public void setAdditionalInfo(String additionalInfo) {
+		this.additionalInfo = additionalInfo;
+	}
+
 	public Address(){
 		clear();
 	}
@@ -107,6 +119,7 @@ public class Address {
 		setPrivatePhone("");
 		setMobilePhone("");
 		setZip("");
+		setAdditionalInfo("");
 	}
 	
 	public String getRealPhone()

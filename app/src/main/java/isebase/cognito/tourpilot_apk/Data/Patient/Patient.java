@@ -231,7 +231,8 @@ public class Patient extends BaseObject implements IAddressable {
 		setStrDoctorsIDs(parsingString.next(";"));
 		setStrRelativeIDs(parsingString.next(";"));
 
-		setAdditionalAddressIDs(parsingString.next("~"));
+		setAdditionalAddressIDs(parsingString.next(";"));
+		address.setAdditionalInfo(parsingString.next("~"));
 
 		setCheckSum(ncryptor.NcodeToL(parsingString.next()));
 	}
