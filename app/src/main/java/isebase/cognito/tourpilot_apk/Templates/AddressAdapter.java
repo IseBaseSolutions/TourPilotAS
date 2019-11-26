@@ -91,7 +91,16 @@ public class AddressAdapter<T extends IAddressable> extends ArrayAdapter<T> {
 			
 			TableRow rowMobilePhone = showPhone(R.string.phone_mobile, addressHolder.address.getAddress().getMobilePhone(), addressHolder.address.getAddress().getRealMobilePhone(), tablePhones);
 			tablePhones.addView(rowMobilePhone);
-		}		
+		}
+
+		if (addressHolder.address instanceof Patient) {
+			if(addressHolder.address.getAddress().getAdditionalInfo().length() > 0) {
+				addressHolder.tvAddressAdditionalInfo = (TextView) row.findViewById(R.id.tvAddressAdditionalInfo);
+				addressHolder.tvAddressAdditionalInfo.setVisibility(View.VISIBLE);
+				addressHolder.tvAddressAdditionalInfo.setText(String.format("%s %s", context.getString(R.string.address_additional_info),
+						addressHolder.address.getAddress().getAdditionalInfo()));
+			}
+		}
 		return row;
 	}
 	
@@ -162,6 +171,7 @@ public class AddressAdapter<T extends IAddressable> extends ArrayAdapter<T> {
 		
 		TextView tvAddressName;
 		TextView tvBirthDate;
+		TextView tvAddressAdditionalInfo;
 	}
 	
 	public void onCallPhone(View view) {		

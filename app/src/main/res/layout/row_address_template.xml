@@ -35,6 +35,17 @@
         android:text="Address"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
+    <TextView
+        android:id="@+id/tvAddressAdditionalInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal|center"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:visibility="gone"
+        android:text="Zusatzinfo"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
     <TableLayout
         android:id="@+id/tablePhones"
         android:layout_width="fill_parent"
